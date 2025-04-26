@@ -107,7 +107,10 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodMealQueso",
             "FoodSoupNettle",
             "FoodMealEnchiladas",
-            "FoodBurgerBaseball"
+            "FoodBurgerBaseball",
+            "FoodMealNachosCheesy",
+            "FoodSoupChiliHot",
+            "FoodMothCapreseSalad",
         };
 
         [DataField("tier3Protos")]
@@ -150,7 +153,17 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodMothHeartburnSoup",
             "FoodSoupBisque",
             "FoodCakeSlime",
-            "FoodBurgerCrazy"
+            "FoodBurgerCrazy",
+            "FoodMealPoachedPears",
+            "FoodMealPearsBelleHelene",
+            "FoodTartPearCheese",
+            "FoodMeatSnailCooked",
+            "FoodSoupEscargot",
+            "FoodMealNachosCuban",
+            "FoodSaladHerb",
+            "FoodSaladColeslaw",
+            "FoodSaladCaesar",
+            "FoodSaladFruit",
         };
 
         [DataField("robossuierRewards")]
@@ -298,7 +311,10 @@ namespace Content.Server.Roboisseur.Roboisseur
             "LeavesCannabisRainbowDried",
             "LeavesCannabisDried",
             "FoodCakeBrain",
-            "FoodBurgerBrain"
+            "FoodBurgerBrain",
+            "FoodMeatAnomaly",
+            "FoodMothBeanStew",
+            "FoodPizzaWorldpeas",
         };
     }
 }
