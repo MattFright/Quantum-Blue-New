@@ -1,41 +1,98 @@
+# QB edit - Everything in this file was reorganized and slightly renamed
+# as all files themselves were also reorganzied and reprocessed
+
+- type: jukebox
+  id: DifferentReality
+  name: "A Different Reality (Lagoona Remix) // Andreas Viklund"
+  path:
+    path: /Audio/Jukebox/A_Different_Reality_Lagoona_Remix.xm_MONO.ogg
+
+- type: jukebox
+  id: AtomicAmnesia
+  name: "Atomic Amnesia MMX // Philip Dyer"
+  path:
+    path: /Audio/Jukebox/Atomic_Amnesia_MMX_MONO.ogg
+
+- type: jukebox
+  id: AutumnalEquinox
+  name: "Autumnal Equinox // lemonade"
+  path:
+    path: /Audio/Jukebox/Autumnal_Equinox.xm_MONO.ogg
+
+- type: jukebox
+  id: CometHaley
+  name: "Comet Haley // Stellardrone"
+  path:
+    path: /Audio/Jukebox/Comet_Haley_MONO.ogg
+
+- type: jukebox
+  id: EndlessSpace
+  name: "Endless Space // SolusLunes"
+  path:
+    path: /Audio/Jukebox/Endless_Space_MONO.ogg
+
+- type: jukebox
+  id: EveryLightIsBlinkingAtOnce
+  name: "Every Light is Blinking at Once // Sunbeamstress"
+  path:
+    path: /Audio/Jukebox/Every_Light_is_Blinking_at_Once_MONO.ogg
+
 - type: jukebox
   id: FlipFlap
-  name: "Flip Flap // X-CEED" # imp stylings
+  name: "Flip Flap // X-CEED"
   path:
-    path: /Audio/Jukebox/flip-flap.ogg
+    path: /Audio/Jukebox/Flip_Flap_MONO.ogg
+
+- type: jukebox
+  id: LasersRipApartTheBulkhead
+  name: "Lasers Rip Apart the Bulhead // Sunbeamstress"
+  path:
+    path: /Audio/Jukebox/Lasers_Rip_Apart_the_Bulkhead_MONO.ogg
+
+- type: jukebox
+  id: LeisurelyVoice
+  name: "Leisurely Voice // Drozerix"
+  path:
+    path: /Audio/Jukebox/Leisurely_Voice.xm_MONO.ogg
+
+- type: jukebox
+  id: PhoronWillMakeUsRich
+  name: "Phoron Will Make Us Rich // Sunbeamstress"
+  path:
+    path: /Audio/Jukebox/Phoron_Will_Make_Us_Rich.ogg
+
+- type: jukebox
+  id: Robocop
+  name: "Robocop // Jonathan Dunn & Eric Shumaker"
+  path:
+    path: /Audio/Jukebox/Robocop_MONO.ogg
+
+- type: jukebox
+  id: Sector11
+  name:  "Sector 11 // MashedByMachines"
+  path:
+    path: /Audio/Jukebox/Sector11_MONO.ogg
+
+- type: jukebox
+  id: Singuloose
+  name:  "Singuloose // Janis Schiedková"
+  path:
+    path: /Audio/Jukebox/Singuloose_MONO.ogg
+
+- type: jukebox
+  id: SpacStac
+  name:  "SpacStac // Hayabusa"
+  path:
+    path: /Audio/Jukebox/Spac_Stac_MONO.ogg
+
+- type: jukebox
+  id: SpaceAsshole
+  name:  "SpaceAsshole // Chris Remo"
+  path:
+    path: /Audio/Jukebox/Space_Asshole_MONO.ogg
 
 - type: jukebox
   id: Tintin
-  name: "Tintin on the Moon // Jeroen Tel" # imp stylings
+  name: "Tintin on the Moon // Jeroen Tel"
   path:
-    path: /Audio/Jukebox/title3.ogg
-
-- type: jukebox
-  id: Thunderdome
-  name:  "Sector 11 // MashedByMachines" # imp stylings
-  path:
-    path: /Audio/Jukebox/sector11.ogg
-
-- type: jukebox
-  id: Constellations
-  name: "Constellations // Qwertyquerty" # imp stylings
-  path:
-    path: /Audio/Jukebox/constellations.ogg
-
-- type: jukebox
-  id: Drifting
-  name: "Drifting // Qwertyquerty" # imp stylings
-  path:
-    path: /Audio/Jukebox/drifting.ogg
-
-- type: jukebox
-  id: Starlight
-  name: "Starlight // Qwertyquerty" # imp stylings
-  path:
-    path: /Audio/Jukebox/starlight.ogg
-
-#- type: jukebox # imp music purge - voted to remove from jukebox
-#  id: Sunset
-#  name: PigeonBeans - Sunset
-#  path:
-#    path: /Audio/Jukebox/sunset.ogg
+    path: /Audio/Jukebox/title3_MONO.ogg
