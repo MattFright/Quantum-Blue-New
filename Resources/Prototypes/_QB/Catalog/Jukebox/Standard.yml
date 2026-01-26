@@ -228,7 +228,7 @@
   name: "Welcome to VA-11 Hall-A // Garoad"
   path:
     path: /Audio/_QB/Jukebox/Welcome_to_VA-11_Hall-A_MONO.ogg
-  
+
 - type: jukebox
   id: WIMP
   name: "W.I.M.P // crisp"
@@ -240,3 +240,12 @@
   name: "WIZARD DISCO // Louie Zong"
   path:
     path: /Audio/_QB/Jukebox/WIZARD_DISCO_MONO.ogg
+
+# EMAG ONLY SONGS
+
+- type: jukebox
+  id: ClearlyNuclear
+  emagOnly: true
+  name: "Clearly Nuclear // mrjajkes"
+  path:
+    path: /Audio/StationEvents/clearly_nuclear.ogg
