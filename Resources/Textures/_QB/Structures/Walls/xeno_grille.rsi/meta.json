@@ -14,12 +14,6 @@
       "name": "brokengrille"
     },
     {
-      "name": "diagonal0"
-    },
-    {
-      "name": "diagonal1"
-    },
-    {
       "name": "grille0",
 	    "directions": 4
     },
@@ -50,9 +44,6 @@
     {
       "name": "grille7",
 	    "directions": 4
-    },
-	  {
-	    "name": "full"
-	  }
+    }
   ]
 }

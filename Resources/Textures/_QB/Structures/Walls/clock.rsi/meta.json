@@ -8,7 +8,7 @@
   },
   "states": [
     {
-	  "name": "wall_gear"
+	    "name": "wall_gear"
     },
     {
       "name": "clock0",

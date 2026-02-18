@@ -50,9 +50,6 @@
     {
       "name": "grille7",
 	    "directions": 4
-    },
-	  {
-	    "name": "full"
-	  }
+    }
   ]
 }
