@@ -1,7 +1,7 @@
-
 # Please use QBBaseGrille if you make a new grille
 
 - type: entity
+  abstract: true
   id: QBBaseGrille
   parent: BaseStructure
   components:
