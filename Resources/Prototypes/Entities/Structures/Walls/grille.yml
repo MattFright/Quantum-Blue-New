@@ -108,7 +108,7 @@
   - type: PlacementReplacement
     key: grilles
   - type: Icon
-    sprite: Structures/Walls/clockwork_grille.rsi
+    sprite: _QB/Structures/Walls/clockwork_grille.rsi
     state: full
   - type: IconSmooth
     key: walls
