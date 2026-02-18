@@ -9,38 +9,38 @@
   "states": [
     {
       "name": "plastic0",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic1",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic2",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic3",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic4",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic5",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic6",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "plastic7",
-	  "directions": 4
+	    "directions": 4
     },
-	{
-	  "name": "full"
-	}
+	  {
+	    "name": "full"
+	  }
   ]
 }

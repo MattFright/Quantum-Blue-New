@@ -9,38 +9,38 @@
   "states": [
     {
       "name": "reinforcedsteelwoodwall0",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall1",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall2",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall3",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall4",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall5",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall6",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "reinforcedsteelwoodwall7",
-	  "directions": 4
+	    "directions": 4
     },
-	{
-	  "name": "full"
-	}
+	  {
+	    "name": "full"
+	  }
   ]
 }
