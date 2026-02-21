@@ -97,7 +97,7 @@
   id: ClockworkGrille
   parent: Grille
   name: ornate grille # Start of QB changes - Iconsmoothening
-  description: A ornate framework of iron rods assembled in a fancy but still fairly reinforced pattern.
+  description: An ornate framework of iron rods assembled in a fancy but still fairly reinforced pattern.
   components:
   - type: Sprite
     drawdepth: Walls
