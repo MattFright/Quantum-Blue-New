@@ -186,7 +186,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: walls
-    base: clown
+    base: bananium # QB
   - type: Fixtures
     fixtures:
       fix1:
@@ -949,7 +949,7 @@
     node: shuttleWall
   - type: IconSmooth
     key: walls
-    base: state
+    base: shuttle
   - type: Appearance
   - type: GenericVisualizer
     visuals:
