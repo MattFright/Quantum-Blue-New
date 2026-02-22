@@ -1434,6 +1434,10 @@
   - type: Icon
     sprite: _QB/Structures/Walls/mining.rsi # QB
     state: diagonal0 # QB
+  - type: IconSmooth # IconSmooth added by QB
+    mode: Diagonal
+    key: walls
+    base: diagonal # QB changes end
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
