@@ -97,7 +97,7 @@
   id: ClockworkGrille
   parent: Grille
   name: ornate grille # Start of QB changes - Iconsmoothening
-  description: A ornate framework of iron rods assembled in a fancy but still fairly reinforced pattern.
+  description: An ornate framework of iron rods assembled in a fancy but still fairly reinforced pattern.
   components:
   - type: Sprite
     drawdepth: Walls
@@ -108,7 +108,7 @@
   - type: PlacementReplacement
     key: grilles
   - type: Icon
-    sprite: Structures/Walls/clockwork_grille.rsi
+    sprite: _QB/Structures/Walls/clockwork_grille.rsi
     state: full
   - type: IconSmooth
     key: walls
@@ -184,17 +184,17 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/grille.rsi
+    sprite: _QB/Structures/Walls/grille.rsi # QB
     layers:
-    - state: grille_diagonal
+    - state: diagonal0 # QB
     - state: electrified_diagonal
       sprite: Effects/electricity.rsi
       map: ["enum.ElectrifiedLayers.Sparks"]
       shader: unshaded
       visible: false
   - type: Icon
-    sprite: Structures/Walls/grille.rsi
-    state: grille_diagonal
+    sprite: _QB/Structures/Walls/grille.rsi # QB
+    state: diagonal0 # QB
   - type: Tag
     tags:
     - Diagonal
@@ -214,25 +214,29 @@
   - type: Construction
     graph: GrilleDiagonal
     node: grilleDiagonal
+  - type: IconSmooth # IconSmooth added by QB
+    mode: Diagonal
+    key: walls
+    base: diagonal # QB changes end
 
 - type: entity
   id: ClockworkGrilleDiagonal
   parent: ClockworkGrille
-  name: diagonal clockwork grille
+  name: diagonal ornate grille # QB
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/clockwork_grille.rsi
+    sprite: _QB/Structures/Walls/clockwork_grille.rsi # QB
     layers:
-    - state: ratvargrille_diagonal
+    - state: diagonal0 # QB
     - state: electrified_diagonal
       sprite: Effects/electricity.rsi
       map: ["enum.ElectrifiedLayers.Sparks"]
       shader: unshaded
       visible: false
   - type: Icon
-    sprite: Structures/Walls/clockwork_grille.rsi
-    state: ratvargrille_diagonal
+    sprite: _QB/Structures/Walls/clockwork_grille.rsi # QB
+    state: diagonal0 # QB
   - type: Tag
     tags:
     - Diagonal
@@ -252,4 +256,7 @@
   - type: Construction
     graph: GrilleDiagonal
     node: clockworkGrilleDiagonal
-
+  - type: IconSmooth # IconSmooth added by QB
+    mode: Diagonal
+    key: walls
+    base: diagonal # QB changes end

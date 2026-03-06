@@ -9,38 +9,38 @@
   "states": [
     {
       "name": "shuttle0",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle1",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle2",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle3",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle4",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle5",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle6",
-	  "directions": 4
+	    "directions": 4
     },
     {
       "name": "shuttle7",
-	  "directions": 4
+	    "directions": 4
     },
-	{
-	  "name": "full"
-	}
+	  {
+	    "name": "full"
+	  }
   ]
 }

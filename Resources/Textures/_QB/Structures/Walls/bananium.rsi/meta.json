@@ -1,12 +1,13 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-  "copyright": "Original artwork by Mattfright",
+    "copyright": "Original artwork by Mattfright",
     "size": {
         "x": 32,
         "y": 32
     },
-    "states": [
+    "states": 
+    [
         {
             "name": "bananium0",
             "directions": 4
