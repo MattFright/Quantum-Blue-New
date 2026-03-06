@@ -11,6 +11,12 @@
         "name": "full"
       },
       {
+        "name": "rustfull"
+      },
+      {
+        "name": "meltedfull"
+      },
+      {
         "name": "grille_broken"
       },
       {
@@ -134,5 +140,5 @@
         "directions": 4
       }
     ]
-  }
+}
   

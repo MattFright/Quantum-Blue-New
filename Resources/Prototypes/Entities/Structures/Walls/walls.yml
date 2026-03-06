@@ -102,9 +102,9 @@
   name: brick wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/brick.rsi
+    sprite: _QB/Structures/Walls/brick.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/brick.rsi
+    sprite: _QB/Structures/Walls/brick.rsi # QB
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -132,9 +132,9 @@
   name: clock wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/clock.rsi
+    sprite: _QB/Structures/Walls/clock.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/clock.rsi
+    sprite: _QB/Structures/Walls/clock.rsi # QB
   - type: Construction
     graph: ClockworkGirder
     node: clockworkWall
@@ -161,9 +161,9 @@
   name: bananium wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/clown.rsi
+    sprite: _QB/Structures/Walls/bananium.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/clown.rsi
+    sprite: _QB/Structures/Walls/bananium.rsi # QB
   - type: Construction
     graph: Girder
     node: bananiumWall
@@ -186,7 +186,7 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: walls
-    base: clown
+    base: bananium # QB
   - type: Fixtures
     fixtures:
       fix1:
@@ -296,9 +296,9 @@
   name: diamond wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/diamond.rsi
+    sprite: _QB/Structures/Walls/diamond.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/diamond.rsi
+    sprite: _QB/Structures/Walls/diamond.rsi # QB
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -326,9 +326,9 @@
   name: gold wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/gold.rsi
+    sprite: _QB/Structures/Walls/gold.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/gold.rsi
+    sprite: _QB/Structures/Walls/gold.rsi # QB
   - type: Construction
     graph: Girder
     node: goldWall
@@ -405,9 +405,9 @@
   name: plasma wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/plasma.rsi
+    sprite: _QB/Structures/Walls/plasma.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/plasma.rsi
+    sprite: _QB/Structures/Walls/plasma.rsi # QB
   - type: Construction
     graph: Girder
     node: plasmaWall
@@ -449,9 +449,9 @@
   name: plastic wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/plastic.rsi
+    sprite: _QB/Structures/Walls/plastic.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/plastic.rsi
+    sprite: _QB/Structures/Walls/plastic.rsi # QB
   - type: Construction
     graph: Girder
     node: plasticWall
@@ -492,9 +492,9 @@
   suffix: indestructible
   components:
     - type: Sprite
-      sprite: Structures/Walls/plastitanium.rsi
+      sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     - type: Icon
-      sprite: Structures/Walls/plastitanium.rsi
+      sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     - type: IconSmooth
       key: walls
       base: plastitanium
@@ -590,9 +590,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _QB/Structures/Walls/solid.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _QB/Structures/Walls/solid.rsi # QB
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -660,9 +660,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _QB/Structures/Walls/solid_rust.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _QB/Structures/Walls/solid_rust.rsi # QB
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -700,11 +700,11 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/reinforced_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/solid.rsi # QB
+    state: reinf_diagonal0 # QB
   - type: Icon
-    sprite: Structures/Walls/reinforced_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/solid.rsi # QB
+    state: reinf_diagonal0 # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -740,9 +740,9 @@
   name: riveted wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/riveted.rsi
+    sprite: _QB/Structures/Walls/riveted.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/riveted.rsi
+    sprite: _QB/Structures/Walls/riveted.rsi # QB
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -801,9 +801,9 @@
   name: silver wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/silver.rsi
+    sprite: _QB/Structures/Walls/silver.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/silver.rsi
+    sprite: _QB/Structures/Walls/silver.rsi # QB
   - type: Construction
     graph: Girder
     node: silverWall
@@ -845,10 +845,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _QB/Structures/Walls/shuttle.rsi # QB
     state: state0
   - type: Icon
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _QB/Structures/Walls/shuttle.rsi # QB
     state: state0
   - type: Reflect
     reflectProb: 1
@@ -940,16 +940,16 @@
   - type: RadiationBlocker
     resistance: 5
   - type: Sprite
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _QB/Structures/Walls/shuttle.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _QB/Structures/Walls/shuttle.rsi # QB
     state: full
   - type: Construction
     graph: Girder
     node: shuttleWall
   - type: IconSmooth
     key: walls
-    base: state
+    base: shuttle
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -982,13 +982,13 @@
   name: solid wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _QB/Structures/Walls/solid.rsi # QB
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _QB/Structures/Walls/solid.rsi # QB
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1026,11 +1026,11 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/solid_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/solid.rsi # QB
+    state: diagonal0 # QB
   - type: Icon
-    sprite: Structures/Walls/solid_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/solid.rsi # QB
+    state: diagonal0 # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -1060,9 +1060,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _QB/Structures/Walls/solid_rust.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _QB/Structures/Walls/solid_rust.rsi # QB
     state: full
   - type: Construction
     graph: Girder
@@ -1124,9 +1124,9 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Sprite
-    sprite: Structures/Walls/xeno.rsi
+    sprite: _QB/Structures/Walls/xeno.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/xeno.rsi
+    sprite: _QB/Structures/Walls/xeno.rsi # QB
   - type: IconSmooth
     key: chitin
     base: solid
@@ -1144,9 +1144,9 @@
   name: reinforced chitin
   components:
   - type: Sprite
-    sprite: Structures/Walls/xeno.rsi
+    sprite: _QB/Structures/Walls/xeno.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/xeno.rsi
+    sprite: _QB/Structures/Walls/xeno.rsi # QB
     state: rgeneric
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -1202,9 +1202,9 @@
   name: xenoborg wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/xenoborg.rsi
+    sprite: _QB/Structures/Walls/xenoborg.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/xenoborg.rsi
+    sprite: _QB/Structures/Walls/xenoborg.rsi # QB
   - type: IconSmooth
     key: walls
     base: xenoborg
@@ -1217,11 +1217,11 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/xenoborg_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/xenoborg.rsi # QB
+    state: diagonal0 # QB
   - type: Icon
-    sprite: Structures/Walls/xenoborg_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/xenoborg.rsi # QB
+    state: diagonal0 # QB
 
 - type: entity
   parent: BaseWall
@@ -1229,9 +1229,9 @@
   name: uranium wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/uranium.rsi
+    sprite: _QB/Structures/Walls/uranium.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/uranium.rsi
+    sprite: _QB/Structures/Walls/uranium.rsi # QB
   - type: Construction
     graph: Girder
     node: uraniumWall
@@ -1281,9 +1281,9 @@
   description: The traditional greytide defense.
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Walls/wood.rsi # imp
+    sprite: _QB/Structures/Walls/wood.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Walls/wood.rsi # imp
+    sprite: _QB/Structures/Walls/wood.rsi # QB
   - type: Construction
     graph: Barricade
     node: woodWall
@@ -1327,9 +1327,9 @@
   - type: Damageable
     damageModifierSet: Web
   - type: Sprite
-    sprite: Structures/Walls/web.rsi
+    sprite: _QB/Structures/Walls/web.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/web.rsi
+    sprite: _QB/Structures/Walls/web.rsi # QB
   - type: Destructible
     thresholds:
     - trigger: # Excess damage, don't spawn entities
@@ -1395,9 +1395,9 @@
   - type: StaticPrice # imp
     price: 400
   - type: Sprite
-    sprite: Structures/Walls/mining.rsi
+    sprite: _QB/Structures/Walls/mining.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/mining.rsi
+    sprite: _QB/Structures/Walls/mining.rsi # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -1429,11 +1429,15 @@
     node: diagonalMiningWall
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/mining_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/mining.rsi # QB
+    state: diagonal0 # QB
   - type: Icon
-    sprite: Structures/Walls/mining_diagonal.rsi
-    state: state0
+    sprite: _QB/Structures/Walls/mining.rsi # QB
+    state: diagonal0 # QB
+  - type: IconSmooth # IconSmooth added by QB
+    mode: Diagonal
+    key: walls
+    base: diagonal # QB changes end
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -1695,9 +1699,9 @@
     - Wall
   - type: Sprite
     drawdepth: SmallObjects #so bullets pass 'through'
-    sprite: Structures/Walls/card.rsi
+    sprite: _QB/Structures/Walls/card.rsi # QB
   - type: Icon
-    sprite: Structures/Walls/card.rsi
+    sprite: _QB/Structures/Walls/card.rsi # QB
     state: full
   - type: Construction
     graph: Cardwall
