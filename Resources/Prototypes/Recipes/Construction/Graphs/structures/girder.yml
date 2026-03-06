@@ -164,6 +164,17 @@
               amount: 2
               doAfter: 2
 
+        - to: paperWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Paper
+              amount: 2
+              doAfter: 2
+
     - node: wall
       entity: WallSolid
       edges:
@@ -704,15 +715,15 @@
         - to: wall
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 2
         - to: wall
           steps:
             - tool: Brushing
-              doAfter: 12
+              doAfter: 4
         - to: wall #imp edit
           steps:
             - tool: Derusting
-              doAfter: 5
+              doAfter: 4
 
     - node: reinforcedWallRust
       entity: WallReinforcedRust
@@ -720,15 +731,15 @@
         - to: reinforcedWall
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 2
         - to: reinforcedWall
           steps:
             - tool: Brushing
-              doAfter: 12
+              doAfter: 4
         - to: reinforcedWall #imp edit
           steps:
             - tool: Derusting
-              doAfter: 5
+              doAfter: 4
 
     - node: techWall #imp
       entity: WallTech
@@ -776,3 +787,15 @@
             doAfter: 4
           - tool: Cutting
             doAfter: 1
+
+    - node: paperWall #nyano
+      entity: WallPaper
+      edges:
+        - to: girder
+          completed:
+          - !type:GivePrototype
+            prototype: SheetPaper1
+            amount: 2
+          steps:
+          - tool: Prying
+            doAfter: 10

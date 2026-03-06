@@ -1,0 +1,251 @@
+# Files have to be in mono or you'll screw up the positional audio system and sounds won't attenuate at a distance
+# Jukebox songs can also be much lower quality than lobby songs
+
+- type: jukebox
+  id: ANewDawn
+  name: "A New Dawn // Nahu Pyrope"
+  path:
+    path: /Audio/_QB/Jukebox/A_New_Dawn_MONO.ogg
+
+- type: jukebox
+  id: FunkyBeat
+  name: "AIN'T NOTHIN' LIKE A FUNKY BEAT // Hideki Naganuma"
+  path:
+    path: /Audio/_QB/Jukebox/AINT_NOTHIN_LIKE_A_FUNKY_BEAT_MONO.ogg
+
+- type: jukebox
+  id: AlongWithBrew
+  name: "Along With Brew // Pilotredsky"
+  path:
+    path: /Audio/_QB/Jukebox/Along_With_Brew_MONO.ogg
+
+- type: jukebox
+  id: BasinKeep
+  name: "Basin Keep // Shirakumo Nagi"
+  path:
+    path: /Audio/_QB/Jukebox/Basin_Keep_MONO.ogg
+
+- type: jukebox
+  id: Bodybuilder
+  name: "Bodybuilder // Pilotredsun"
+  path:
+    path: /Audio/_QB/Jukebox/Bodybuilder_MONO.ogg
+
+- type: jukebox
+  id: ConfederateBattle
+  name: "Confederate (Battle) // MaddieDoktor & PDTM"
+  path:
+    path: /Audio/_QB/Jukebox/Confederate_Battle_MONO.ogg
+
+- type: jukebox
+  id: Conundrum
+  name: "Conundrum // Midori Mizuno"
+  path:
+    path: /Audio/_QB/Jukebox/Conundrum.it_MONO.ogg
+
+- type: jukebox
+  id: CubicVoid
+  name: "Cubic Voic // +TEK"
+  path:
+    path: /Audio/_QB/Jukebox/Cubic_Void_MONO.ogg
+
+- type: jukebox
+  id: DevilFish
+  name: "Devil Fish // FreqGen"
+  path:
+    path: /Audio/_QB/Jukebox/Devil_Fish_MONO.ogg
+
+- type: jukebox
+  id: DontDrinkIt
+  name: "Don't Drink It // Pilotredsky"
+  path:
+    path: /Audio/_QB/Jukebox/Dont_Drink_It_MONO.ogg
+
+- type: jukebox
+  id: DosHighUmb
+  name: "DOS=HIGH, UMB // MASTER BOOT RECORD"
+  path:
+    path: /Audio/_QB/Jukebox/DOS=HIGH_UMB_MONO.ogg
+
+- type: jukebox
+  id: DriveMeWild
+  name: "Drive Me Wild // Garoad"
+  path:
+    path: /Audio/_QB/Jukebox/Drive_Me_Wild_MONO.ogg
+
+- type: jukebox
+  id: dU5kM3lgbVkgNWsxbg
+  name: "dU5k M3lgb VkgN Wsxbg // Phyrnna"
+  path:
+    path: /Audio/_QB/Jukebox/dU5k_M3Igb_VkgN_Wsxbg_MONO.ogg
+
+- type: jukebox
+  id: EndureEliminate
+  name: "Endure, Eliminate // corru.works & saiiko2"
+  path:
+    path: /Audio/_QB/Jukebox/Endure_Eliminate_MONO.ogg
+
+- type: jukebox
+  id: Epoch
+  name: "Epoch // Aaron Cherof"
+  path:
+    path: /Audio/_QB/Jukebox/Epoch_MONO.ogg
+
+- type: jukebox
+  id: FloorOne
+  name: "Floor One // Dorkus64"
+  path:
+    path: /Audio/_QB/Jukebox/Floor_One_MONO.ogg
+
+- type: jukebox
+  id: FriendlyConversation
+  name: "Friendly Conversation // Garoad"
+  path:
+    path: /Audio/_QB/Jukebox/Friendly_Conversation_MONO.ogg
+
+- type: jukebox
+  id: GETENUF
+  name: "GET ENUF // Hideky Naganuma"
+  path:
+    path: /Audio/_QB/Jukebox/GET_ENUF_MONO.ogg
+
+- type: jukebox
+  id: Hackers
+  name: "Hackers // White Bat Audio"
+  path:
+    path: /Audio/_QB/Jukebox/Hackers_MONO.ogg
+
+- type: jukebox
+  id: HornetPillows
+  name: "Hornet Pillows // crisp"
+  path:
+    path: /Audio/_QB/Jukebox/Hornet_Pillows_MONO.ogg
+
+- type: jukebox
+  id: IntoTheSky
+  name: "Into The Sky // +TEK"
+  path:
+    path: /Audio/_QB/Jukebox/Into_The_Sky_MONO.ogg
+
+- type: jukebox
+  id: Kitsch
+  name: "Kitsch // Yuu Miyake"
+  path:
+    path: /Audio/_QB/Jukebox/Kitsch_MONO.ogg
+
+- type: jukebox
+  id: Knockout
+  name: "Knockout // Silentsphere Studios"
+  path:
+    path: /Audio/_QB/Jukebox/Knockout_MONO.ogg
+
+- type: jukebox
+  id: MassEncounter
+  name: "MassEncounter // +TEK"
+  path:
+    path: /Audio/_QB/Jukebox/Mass_Encounter_MONO.ogg
+
+- type: jukebox
+  id: Myoacid
+  name: "Myoacid // crisp"
+  path:
+    path: /Audio/_QB/Jukebox/Myoacid_MONO.ogg
+
+- type: jukebox
+  id: OrdinaryDaysV2
+  name: "OrdinaryDaysV2 // Klaus Veen"
+  path:
+    path: /Audio/_QB/Jukebox/Ordinary_Days_V2_MONO.ogg
+
+- type: jukebox
+  id: QuantumBlue
+  name: "Quantum Blue // Storyteller"
+  path:
+    path: /Audio/_QB/Jukebox/Quantum_Blue_MONO.ogg
+
+- type: jukebox
+  id: RhombusSquare
+  name: "Rhombus Square // Shirakumo Nagi"
+  path:
+    path: /Audio/_QB/Jukebox/Rhombus_Square_MONO.ogg
+
+- type: jukebox
+  id: RUINOUSINTNT
+  name: "RUINOUS INTNT // NoisyRejects"
+  path:
+    path: /Audio/_QB/Jukebox/RUINOUS_INTNT_MONO.ogg
+
+- type: jukebox
+  id: SatanicPanic
+  name: "Satanic Panic // Crypt Voice"
+  path:
+    path: /Audio/_QB/Jukebox/Satanic_Panic_MONO.ogg
+
+- type: jukebox
+  id: SneakyDriver
+  name: "Sneaky Driver // Bill Kiley"
+  path:
+    path: /Audio/_QB/Jukebox/Sneaky_Driver_MONO.ogg
+
+- type: jukebox
+  id: TheCityOfLostHope
+  name: "The City Of Lost Hope // Rocketcat Games"
+  path:
+    path: /Audio/_QB/Jukebox/The_City_of_Lost_Hope_MONO.ogg
+
+- type: jukebox
+  id: ThirdDistrict
+  name: "Third District // LudoWic"
+  path:
+    path: /Audio/_QB/Jukebox/Third_District_MONO.ogg
+
+- type: jukebox
+  id: TPFTrans
+  name: "TPF Trans // Phyrnna"
+  path:
+    path: /Audio/_QB/Jukebox/TPF_Trans_MONO.ogg
+
+- type: jukebox
+  id: VSCPU
+  name: "Vs. CPU // Waichiro Ozaki & Hiroshi Tanabe"
+  path:
+    path: /Audio/_QB/Jukebox/Vs_CPU_MONO.ogg
+
+- type: jukebox
+  id: VSLancastrians
+  name: "Vs. Lancastrians // Waichiro Ozaki & Hiroshi Tanabe"
+  path:
+    path: /Audio/_QB/Jukebox/Vs_Lancastrians_MONO.ogg
+
+- type: jukebox
+  id: Warsaw
+  name: "Warsaw // Pilotredsun"
+  path:
+    path: /Audio/_QB/Jukebox/Warsaw_MONO.ogg
+
+- type: jukebox
+  id: WelcomeToVallhalla
+  name: "Welcome to VA-11 Hall-A // Garoad"
+  path:
+    path: /Audio/_QB/Jukebox/Welcome_to_VA-11_Hall-A_MONO.ogg
+
+- type: jukebox
+  id: WIMP
+  name: "W.I.M.P // crisp"
+  path:
+    path: /Audio/_QB/Jukebox/WIMP_MONO.ogg
+
+- type: jukebox
+  id: WizardDisco
+  name: "WIZARD DISCO // Louie Zong"
+  path:
+    path: /Audio/_QB/Jukebox/WIZARD_DISCO_MONO.ogg
+
+# EMAG ONLY SONGS
+
+- type: jukebox
+  id: ClearlyNuclear
+  emagOnly: true
+  name: "Clearly Nuclear // mrjajkes"
+  path:
+    path: /Audio/StationEvents/clearly_nuclear.ogg

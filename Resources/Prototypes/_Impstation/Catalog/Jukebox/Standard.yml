@@ -11,11 +11,11 @@
   path:
     path: /Audio/_Impstation/Music/4ff.ogg
 
-- type: jukebox
-  id: AlongWithBrew
-  name: "Along With Brew // Pilotredsky"
-  path:
-    path: /Audio/_Impstation/Music/along_with_brew.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: AlongWithBrew
+#  name: "Along With Brew // Pilotredsky"
+#  path:
+#    path: /Audio/_Impstation/Music/along_with_brew.ogg
 
 - type: jukebox
   id: ArmoredInGreen # it's not called "armored in green", this is a mistake made by a youtube uploader and copied by kartkrew. researching this was fun
@@ -29,11 +29,11 @@
   path:
     path: /Audio/_Impstation/Music/bio-engineering.ogg
 
-- type: jukebox
-  id: Bodybuilder
-  name: "Bodybuilder // PilotRedSun"
-  path:
-    path: /Audio/_Impstation/Music/bodybuilder.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: Bodybuilder
+#  name: "Bodybuilder // PilotRedSun"
+#  path:
+#    path: /Audio/_Impstation/Music/bodybuilder.ogg
 
 - type: jukebox
   id: CantGoHomeAgain
@@ -53,11 +53,11 @@
   path:
     path: /Audio/_Impstation/Music/create_a_wrestler.ogg
 
-- type: jukebox
-  id: DontDrinkIt
-  name: "Don't Drink It // Pilotredsky"
-  path:
-    path: /Audio/_Impstation/Music/dont_drink_it.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: DontDrinkIt
+#  name: "Don't Drink It // Pilotredsky"
+#  path:
+#    path: /Audio/_Impstation/Music/dont_drink_it.ogg
 
 - type: jukebox
   id: DriversLounge
@@ -65,11 +65,11 @@
   path:
     path: /Audio/_Impstation/Music/drivers_lounge.ogg
 
-- type: jukebox
-  id: Epoch
-  name: "[Cobalt Core] Epoch // Aaron Cherof"
-  path:
-    path: /Audio/_Impstation/Music/epoch.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: Epoch
+#  name: "[Cobalt Core] Epoch // Aaron Cherof"
+#  path:
+#    path: /Audio/_Impstation/Music/epoch.ogg
 
 - type: jukebox
   id: EternalSanctity
@@ -101,11 +101,11 @@
   path:
     path: /Audio/_Impstation/Music/funky_jazz.ogg
 
-- type: jukebox
-  id: GETENUF
-  name: "[Bomb Rush Cyberfunk] GET ENUF // Hideki Naganuma"
-  path:
-    path: /Audio/_Impstation/Music/get_enuf.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: GETENUF
+#  name: "[Bomb Rush Cyberfunk] GET ENUF // Hideki Naganuma"
+#  path:
+#    path: /Audio/_Impstation/Music/get_enuf.ogg
 
 - type: jukebox
   id: GrinchsUltimatum
@@ -305,11 +305,11 @@
   path:
     path: /Audio/_Impstation/Music/song_that_plays_when_you_encounter_a_caterpillar.ogg
 
-- type: jukebox
-  id: SpaceAsshole
-  name: "Space Asshole // Chris Remo"
-  path:
-    path: /Audio/_Impstation/Music/space_asshole.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: SpaceAsshole
+#  name: "Space Asshole // Chris Remo"
+#  path:
+#    path: /Audio/_Impstation/Music/space_asshole.ogg
 
 - type: jukebox
   id: Thanks
@@ -335,17 +335,17 @@
   path:
     path: /Audio/_Impstation/Music/twodaysoff.ogg
 
-- type: jukebox
-  id: Warsaw
-  name: "warsaw // PilotRedSun"
-  path:
-    path: /Audio/_Impstation/Music/warsaw.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: Warsaw
+#  name: "warsaw // PilotRedSun"
+#  path:
+#    path: /Audio/_Impstation/Music/warsaw.ogg
 
-- type: jukebox
-  id: WizardDisco
-  name: "WIZARD DISCO // Louie Zong"
-  path:
-    path: /Audio/_Impstation/Music/wizard_disco.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: WizardDisco
+#  name: "WIZARD DISCO // Louie Zong"
+#  path:
+#    path: /Audio/_Impstation/Music/wizard_disco.ogg
 
 - type: jukebox
   id: YouBlowMyMind
@@ -368,12 +368,12 @@
   path:
     path: /Audio/_Impstation/Music/stars_and_games.ogg
 
-- type: jukebox
-  id: ANewDawn
-  emagOnly: true # for its intensity and finality. and also once cult's back in it'll fit in in this pool with nukebox as "songs that plays when you motherfucker die"
-  name: "[Space Station 14] A New Dawn // Nahu Pyrope"
-  path:
-    path: /Audio/_Impstation/Music/a_new_dawn.ogg
+#- type: jukebox #QB We've got our own listing for this
+#  id: ANewDawn
+#  emagOnly: true # for its intensity and finality. and also once cult's back in it'll fit in in this pool with nukebox as "songs that plays when you motherfucker die"
+#  name: "[Space Station 14] A New Dawn // Nahu Pyrope"
+#  path:
+#    path: /Audio/_Impstation/Music/a_new_dawn.ogg
 
 - type: jukebox
   id: AntiAlienAlarm
@@ -398,12 +398,12 @@
   path:
     path: /Audio/_Impstation/Music/boss.ogg
 
-- type: jukebox
-  id: BlatantlyNuclear
-  emagOnly: true
-  name: "Blatantly Nuclear // mrjajkes"
-  path:
-    path: /Audio/StationEvents/blatantly_nuclear.ogg
+#- type: jukebox #QB replacing this with the old Clearly_Nuclear, in our own jukebox file
+#  id: BlatantlyNuclear
+#  emagOnly: true
+#  name: "Blatantly Nuclear // mrjajkes"
+#  path:
+#    path: /Audio/StationEvents/blatantly_nuclear.ogg
 
 - type: jukebox
   id: CyberGrind

@@ -1,0 +1,8 @@
+- type: entity
+  id: BaseSecurityBartenderZookeeperContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+#  components: QB: disabling valid vision
+#  - type: Contraband
+#    allowedDepartments: [ Security ]
+#    allowedJobs: [ Bartender, Zookeeper ]

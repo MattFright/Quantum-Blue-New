@@ -1,0 +1,16 @@
+- type: entity
+  parent: DrinkGlass
+  id: DrinkKvassGlass
+  suffix: kvass
+  description: A cool refreshing drink with a taste of socialism.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+          - ReagentId: Kvass
+            Quantity: 30
+  - type: Icon
+    sprite: _DV/Objects/Consumable/Drinks/kvass.rsi
+    state: icon
