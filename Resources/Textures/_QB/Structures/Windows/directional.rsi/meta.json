@@ -8,6 +8,10 @@
   },
   "states": [
     {
+      "name": "cardboard_window",
+      "directions": 4
+    },
+    {
       "name": "window",
       "directions": 4
     },

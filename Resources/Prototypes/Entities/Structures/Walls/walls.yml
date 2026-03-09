@@ -129,7 +129,7 @@
 - type: entity
   parent: BaseWall
   id: WallClock
-  name: clock wall
+  name: clockwork wall # QB
   components:
   - type: Sprite
     sprite: _QB/Structures/Walls/clock.rsi # QB
@@ -542,10 +542,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     state: state0
   - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -561,10 +561,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     state: state0
   - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _QB/Structures/Walls/plastitanium.rsi # QB
     state: state0
   - type: Destructible
     thresholds:
@@ -1683,6 +1683,7 @@
   parent: BaseStructure
   name: cardboard wall
   description: Budget cuts are hitting hard.
+  suffix: DO NOT MAP # QB
   placement:
     mode: SnapgridCenter
     snap:
@@ -1698,9 +1699,9 @@
     - Wall
   - type: Sprite
     drawdepth: SmallObjects #so bullets pass 'through'
-    sprite: _QB/Structures/Walls/card.rsi # QB
+    sprite: Structures/Walls/card.rsi
   - type: Icon
-    sprite: _QB/Structures/Walls/card.rsi # QB
+    sprite: Structures/Walls/card.rsi
     state: full
   - type: Construction
     graph: Cardwall

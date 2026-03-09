@@ -10,6 +10,14 @@
       {
         "name": "full"
       },
+    {
+      "name": "state0",
+      "directions": 4
+    },
+    {
+      "name": "state1",
+      "directions": 4
+    },
       {
         "name": "uwindow0",
         "directions": 4

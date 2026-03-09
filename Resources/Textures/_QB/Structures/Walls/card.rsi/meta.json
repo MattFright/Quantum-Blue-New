@@ -11,35 +11,35 @@
             "name": "full"
         },
         {
-            "name": "card0",
+            "name": "wall0",
             "directions": 4
         },
         {
-            "name": "card1",
+            "name": "wall1",
             "directions": 4
         },
         {
-            "name": "card2",
+            "name": "wall2",
             "directions": 4
         },
         {
-            "name": "card3",
+            "name": "wall3",
             "directions": 4
         },
         {
-            "name": "card4",
+            "name": "wall4",
             "directions": 4
         },
         {
-            "name": "card5",
+            "name": "wall5",
             "directions": 4
         },
         {
-            "name": "card6",
+            "name": "wall6",
             "directions": 4
         },
         {
-            "name": "card7",
+            "name": "wall7",
             "directions": 4
         }
     ]

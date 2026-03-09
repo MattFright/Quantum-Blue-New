@@ -5,9 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/mining.rsi
+    sprite: _QB/Structures/Windows/mining.rsi # QB
   - type: Icon
-    sprite: Structures/Windows/mining.rsi
+    sprite: _QB/Structures/Windows/mining.rsi # QB
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
@@ -54,6 +54,7 @@
 - type: entity
   parent: ShuttleWindow
   id: MiningWindowDiagonal
+  name: mining window # QB
   suffix: diagonal
   placement:
     mode: SnapgridCenter
@@ -62,7 +63,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/mining_diagonal.rsi
+    sprite: _QB/Structures/Windows/mining.rsi # QB
     state: state0
   - type: Tag
     tags:
@@ -73,7 +74,7 @@
     key: windows
     base: state
   - type: Icon
-    sprite: Structures/Windows/mining_diagonal.rsi
+    sprite: _QB/Structures/Windows/mining.rsi # QB
     state: state0
   - type: Fixtures
     fixtures:

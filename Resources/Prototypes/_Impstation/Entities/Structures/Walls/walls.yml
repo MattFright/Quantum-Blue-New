@@ -147,9 +147,9 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: _Impstation/Structures/Walls/steelwoodwall.rsi
+    sprite: _QB/Structures/Walls/steelwoodwall.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Walls/steelwoodwall.rsi
+    sprite: _QB/Structures/Walls/steelwoodwall.rsi # QB
   - type: IconSmooth
     key: walls
     base: steelwoodwall
@@ -189,9 +189,9 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: _Impstation/Structures/Walls/reinforcedsteelwoodwall.rsi
+    sprite: _QB/Structures/Walls/reinforcedsteelwoodwall.rsi # QB
   - type: Icon
-    sprite: _Impstation/Structures/Walls/reinforcedsteelwoodwall.rsi
+    sprite: _QB/Structures/Walls/reinforcedsteelwoodwall.rsi # QB
   - type: IconSmooth
     key: walls
     base: reinforcedsteelwoodwall

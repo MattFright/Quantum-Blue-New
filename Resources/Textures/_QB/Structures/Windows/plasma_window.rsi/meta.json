@@ -11,6 +11,14 @@
       "name": "full"
     },
     {
+      "name": "state0",
+      "directions": 4
+    },
+    {
+      "name": "state1",
+      "directions": 4
+    },
+    {
       "name": "pwindow0",
       "directions": 4
     },
