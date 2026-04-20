@@ -1,0 +1,161 @@
+# Game rules
+
+- type: entity
+  parent: BaseGameRule
+  id: QBGameRuleMeteorSwarm
+  abstract: true
+  components:
+  - type: GameRule
+  - type: StationEvent
+    reoccurrenceDelay: 1
+    earliestStart: 12
+    minimumPlayers: 25
+  - type: MeteorSwarm
+
+- type: entity
+  parent: QBGameRuleMeteorSwarm
+  id: QBGameRuleSpaceDust
+  components:
+  - type: StationEvent
+    weight: 44
+    earliestStart: 2
+    minimumPlayers: 0
+  - type: MeteorSwarm
+    startAnnouncement: true
+    meteors:
+      QBMeteorSpaceDust: 1
+    waves:
+      min: 2
+      max: 6
+    meteorsPerWave:
+      min: 3
+      max: 12
+
+- type: entity
+  parent: QBGameRuleMeteorSwarm
+  id: QBGameRuleMeteorSwarmBasic
+  components:
+  - type: StationEvent
+    weight: 18
+    minimumPlayers: 15
+  - type: MeteorSwarm
+    startAnnouncement: true
+    meteors:
+      QBMeteorSmall: 1
+      QBMeteorMedium: 1
+    waves:
+      min: 1
+      max: 3
+    meteorsPerWave:
+      min: 3
+      max: 8
+
+- type: entity
+  parent: QBGameRuleMeteorSwarm
+  id: QBGameRuleCataclismicMeteorSwarm
+  components:
+  - type: StationEvent
+    weight: 5
+    minimumPlayers: 20
+  - type: MeteorSwarm
+    startAnnouncement: true
+    meteors:
+      QBMeteorCataclismic: 1
+    waves:
+      min: 1
+      max: 2
+    meteorsPerWave:
+      min: 3
+      max: 6
+
+# Event tables
+
+- type: entityTable
+  id: QBMeteorSwarmDustEventsTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: QBGameRuleSpaceDust
+
+- type: entityTable
+  id: QBMeteorSwarmLowChanceTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: QBGameRuleMeteorSwarmBasic
+      prob: 0.15
+
+- type: entityTable
+  id: QBMeteorSwarmMildTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - !type:NestedSelector
+        tableId: QBMeteorSwarmLowChanceTable
+    - !type:NestedSelector
+        tableId: QBMeteorSwarmDustEventsTable
+
+- type: entityTable
+  id: QBMeteorSwarmBasicTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: QBGameRuleMeteorSwarmBasic
+
+- type: entityTable
+  id: QBCataclismicMeteorSwarmTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - id: QBGameRuleCataclismicMeteorSwarm
+
+# Currently not even using this but it's here if we need it i guess
+- type: weightedRandomEntity
+  id: QBMeteorSpawnAsteroidWallTable
+  weights:
+    MeteorRock: 10
+    MeteorRockCoal: 5
+    MeteorRockQuartz: 5
+    MeteorRockTin: 5 # The iron one is called tin for some reason?
+    MeteorRockSilver: 2
+    MeteorRockGold: 2
+    MeteorRockPlasma: 2
+    MeteorRockDiamond: 0.5
+    MeteorRockUranium: 1
+    MeteorRockBananium: 1
+
+# Event schedulers
+
+- type: entity
+  parent: BaseGameRule
+  id: QBBasicMeteorSwarmScheduler
+  components:
+  - type: GameRule
+  - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 600 # 10 min
+    minMaxEventTiming:
+      min: 750 # 12.5 min
+      max: 930 # 17.5 min
+    scheduledGameRules: !type:NestedSelector
+      tableId: QBMeteorSwarmBasicTable
+
+- type: entity
+  parent: BaseGameRule
+  id: QBMildMeteorSwarmScheduler
+  components:
+  - type: GameRule
+  - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 600 # 10 min
+    minMaxEventTiming:
+      min: 750 # 12.5 min
+      max: 930 # 17.5 min
+    scheduledGameRules: !type:NestedSelector
+      tableId: QBMeteorSwarmMildTable
+
+- type: entity
+  parent: BaseGameRule
+  id: QBCalamityMeteorSwarmScheduler
+  components:
+  - type: GameRule
+  - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 600 # 10 min
+    minMaxEventTiming:
+      min: 750 # 12.5 min
+      max: 930 # 17.5 min
+    scheduledGameRules: !type:NestedSelector
+      tableId: QBCalamityMeteorSwarmTable

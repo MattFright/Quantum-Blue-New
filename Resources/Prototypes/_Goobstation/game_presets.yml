@@ -1,37 +1,37 @@
-- type: gamePreset
-  id: Heretics
-  alias:
-    - Heretic
-  name: heretic-gamemode-title
-  description: heretic-gamemode-description
-  cooldown: 1
-  showInVote: false
-  rules:
-    - Heretic
-    - HereticBooksEventScheduler
-    - HereticBooksSpawnBig
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: Heretics
+#   alias:
+#     - Heretic
+#   name: heretic-gamemode-title
+#   description: heretic-gamemode-description
+#   cooldown: 1
+#   showInVote: false
+#   rules:
+#     - Heretic
+#     - HereticBooksEventScheduler
+#     - HereticBooksSpawnBig
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: SecretHeretics
-  alias:
-    - SecretHeretic
-  name: secret-title
-  description: secret-description
-  showInVote: false
-  rules:
-    - Heretic
-    - HereticBooksEventScheduler
-    - HereticBooksSpawnBig
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: SecretHeretics
+#   alias:
+#     - SecretHeretic
+#   name: secret-title
+#   description: secret-description
+#   showInVote: false
+#   rules:
+#     - Heretic
+#     - HereticBooksEventScheduler
+#     - HereticBooksSpawnBig
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
 - type: gamePreset
   id: Changeling
@@ -47,7 +47,8 @@
     - Changeling
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # QB
+    - QBBasicMeteorSwarmScheduler # QB
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -64,6 +65,7 @@
     - Changeling
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # QB
+    - QBBasicMeteorSwarmScheduler # QB
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation

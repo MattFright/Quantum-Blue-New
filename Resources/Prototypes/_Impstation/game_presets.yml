@@ -1,55 +1,55 @@
-- type: gamePreset
-  id: SpyVsSpy
-  alias:
-    - svs
-    - theship
-  name: spy-vs-spy-title
-  description: spy-vs-spy-description
-  showInVote: false
-  cooldown: 2
-  rules:
-    - DummyNonAntagChance
-    - SpyVsSpy
-    - SleeperlessStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: SpyVsSpy
+#   alias:
+#     - svs
+#     - theship
+#   name: spy-vs-spy-title
+#   description: spy-vs-spy-description
+#   showInVote: false
+#   cooldown: 2
+#   rules:
+#     - DummyNonAntagChance
+#     - SpyVsSpy
+#     - SleeperlessStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: SpyVsSpy3TC
-  name: spy-vs-spy-title
-  description: spy-vs-spy-description
-  showInVote: false
-  cooldown: 2
-  rules:
-    - DummyNonAntagChance
-    - SpyVsSpy3TC
-    - SleeperlessStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: SpyVsSpy3TC
+#   name: spy-vs-spy-title
+#   description: spy-vs-spy-description
+#   showInVote: false
+#   cooldown: 2
+#   rules:
+#     - DummyNonAntagChance
+#     - SpyVsSpy3TC
+#     - SleeperlessStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: AllAboardTheShip
-  alias:
-  - svsaller
-  name: allaboard-title
-  description: allaboard-description
-  showInVote: false #lol. lmao
-  rules:
-  - Nukeops
-  - SpyVsSpy20TC
-  - Revolutionary
-  - Zombie
-  - Changeling
-  - BasicStationEventScheduler
-  - KesslerSyndromeScheduler
-  - MeteorSwarmMildScheduler
-  - MeteorSwarmScheduler
-  - RampingStationEventScheduler
-  - SpaceTrafficControlEventScheduler
-  - SpaceTrafficControlFriendlyEventScheduler
-  - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: AllAboardTheShip
+#   alias:
+#   - svsaller
+#   name: allaboard-title
+#   description: allaboard-description
+#   showInVote: false #lol. lmao
+#   rules:
+#   - Nukeops
+#   - SpyVsSpy20TC
+#   - Revolutionary
+#   - Zombie
+#   - Changeling
+#   - BasicStationEventScheduler
+#   - KesslerSyndromeScheduler
+#   - MeteorSwarmMildScheduler
+#   - MeteorSwarmScheduler
+#   - RampingStationEventScheduler
+#   - SpaceTrafficControlEventScheduler
+#   - SpaceTrafficControlFriendlyEventScheduler
+#   - BasicRoundstartVariation
 
 - type: gamePreset
   id: Thief
@@ -59,23 +59,24 @@
   rules:
   - Thief
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LowpopLimiter
 
-- type: gamePreset
-  id: PacifistVsPacifist
-  name: pacifist-vs-pacifist-title
-  description: pacifist-vs-pacifist-description
-  showInVote: false
-  rules:
-  - PacifistVsPacifist
-  - RenaultMigrationEventScheduler # bonus TC
-  - SleeperlessStationEventScheduler
-  - MeteorSwarmScheduler
-  - SpaceTrafficControlFriendlyEventScheduler # the obstacle is each other, not vent spawns!
-  - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: PacifistVsPacifist
+#   name: pacifist-vs-pacifist-title
+#   description: pacifist-vs-pacifist-description
+#   showInVote: false
+#   rules:
+#   - PacifistVsPacifist
+#   - RenaultMigrationEventScheduler # bonus TC
+#   - SleeperlessStationEventScheduler
+#   - MeteorSwarmScheduler
+#   - SpaceTrafficControlFriendlyEventScheduler # the obstacle is each other, not vent spawns!
+#   - BasicRoundstartVariation
 
 # secret...
 # all below protos are admin use only. they set the gamemode but keep the "secret" title and description.
@@ -94,7 +95,8 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # QB
+    - QBBasicMeteorSwarmScheduler # QB
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -110,7 +112,8 @@
     - DummyNonAntagChance
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # QB
+    - QBBasicMeteorSwarmScheduler # QB
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -127,7 +130,8 @@
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # QB
+    - QBBasicMeteorSwarmScheduler # QB
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -142,7 +146,8 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -158,22 +163,23 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
-- type: gamePreset
-  id: SecretKesslerSyndrome
-  alias:
-    - secretkessler
-  name: secret-title
-  description: secret-description
-  showInVote: false
-  rules:
-    - KesslerSyndromeScheduler
-    - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: SecretKesslerSyndrome
+#   alias:
+#     - secretkessler
+#   name: secret-title
+#   description: secret-description
+#   showInVote: false
+#   rules:
+#     - KesslerSyndromeScheduler
+#     - RampingStationEventScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
 - type: gamePreset
   id: SecretZombieteors
@@ -186,71 +192,72 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - KesslerSyndromeScheduler
+  # - KesslerSyndromeScheduler # QB
+  - QBCalamityMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
-- type: gamePreset
-  id: SecretSpyVsSpy
-  alias:
-    - secretsvs
-  name: secret-title
-  description: secret-description
-  showInVote: false
-  rules:
-    - DummyNonAntagChance
-    - SpyVsSpy
-    - SleeperlessStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: SecretSpyVsSpy
+#   alias:
+#     - secretsvs
+#   name: secret-title
+#   description: secret-description
+#   showInVote: false
+#   rules:
+#     - DummyNonAntagChance
+#     - SpyVsSpy
+#     - SleeperlessStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: SecretSpyVsSpy3TC
-  alias:
-    - secretsvs3tc
-  name: secret-title
-  description: secret-description
-  showInVote: false
-  rules:
-    - DummyNonAntagChance
-    - SpyVsSpy3TC
-    - SleeperlessStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: SecretSpyVsSpy3TC
+#   alias:
+#     - secretsvs3tc
+#   name: secret-title
+#   description: secret-description
+#   showInVote: false
+#   rules:
+#     - DummyNonAntagChance
+#     - SpyVsSpy3TC
+#     - SleeperlessStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: LowpopHeretics
-  alias:
-    - LowpopHeretic
-  name: heretic-gamemode-title
-  description: heretic-gamemode-description
-  cooldown: 1
-  showInVote: false
-  rules:
-    - HereticLowpop
-    - HereticBooksEventScheduler
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
-    - PopLimiter20
+# - type: gamePreset # QB
+#   id: LowpopHeretics
+#   alias:
+#     - LowpopHeretic
+#   name: heretic-gamemode-title
+#   description: heretic-gamemode-description
+#   cooldown: 1
+#   showInVote: false
+#   rules:
+#     - HereticLowpop
+#     - HereticBooksEventScheduler
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
+#     - PopLimiter20
 
-- type: gamePreset
-  id: SecretLowpopHeretics
-  alias:
-    - SecretLowpopHeretic
-  name: secret-title
-  description: secret-description
-  showInVote: false
-  rules:
-    - HereticLowpop
-    - HereticBooksEventScheduler
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
-    - PopLimiter20
+# - type: gamePreset # QB
+#   id: SecretLowpopHeretics
+#   alias:
+#     - SecretLowpopHeretic
+#   name: secret-title
+#   description: secret-description
+#   showInVote: false
+#   rules:
+#     - HereticLowpop
+#     - HereticBooksEventScheduler
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
+#     - PopLimiter20

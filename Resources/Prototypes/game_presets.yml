@@ -7,76 +7,77 @@
   description: survival-description
   cooldown: 2 # imp edit
   rules:
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # QB
+    - QBMildMeteorSwarmScheduler # QB
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: KesslerSyndrome
-  alias:
-    - kessler
-    - junk
-    - meteorhell
-  name: kessler-syndrome-title
-  showInVote: false # secret
-  description: kessler-syndrome-description
-  cooldown: 1 # imp edit
-  rules:
-    - KesslerSyndromeScheduler
-    - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: KesslerSyndrome
+#   alias:
+#     - kessler
+#     - junk
+#     - meteorhell
+#   name: kessler-syndrome-title
+#   showInVote: false # secret
+#   description: kessler-syndrome-description
+#   cooldown: 1 # imp edit
+#   rules:
+#     - KesslerSyndromeScheduler
+#     - RampingStationEventScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: AllAtOnce
-  alias:
-  - all
-  name: all-at-once-title
-  description: all-at-once-description
-  showInVote: false
-  rules:
-    - Nukeops
-    - Traitor
-    - Revolutionary
-    - Zombie
-    - Changeling # imp edit
-    - Heretic # imp edit
-    - Wizard
-    - Xenoborgs
-    - KesslerSyndromeScheduler
-    - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: AllAtOnce
+#   alias:
+#   - all
+#   name: all-at-once-title
+#   description: all-at-once-description
+#   showInVote: false
+#   rules:
+#     - Nukeops
+#     - Traitor
+#     - Revolutionary
+#     - Zombie
+#     - Changeling # imp edit
+#     - Heretic # imp edit
+#     - Wizard
+#     - Xenoborgs
+#     - KesslerSyndromeScheduler
+#     - RampingStationEventScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: AllerAtOnce
-  alias:
-  - allall
-  - aller
-  - badidea
-  - punishment
-  name: aller-at-once-title
-  description: aller-at-once-description
-  showInVote: false #Please god dont do this
-  rules:
-    - Nukeops
-    - Traitor
-    - Revolutionary
-    - Zombie
-    - Changeling # imp edit
-    - Heretic # imp edit
-    - Wizard
-    - Xenoborgs
-    - BasicStationEventScheduler
-    - KesslerSyndromeScheduler
-    - MeteorSwarmMildScheduler
-    - MeteorSwarmScheduler
-    - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset # QB
+#   id: AllerAtOnce
+#   alias:
+#   - allall
+#   - aller
+#   - badidea
+#   - punishment
+#   name: aller-at-once-title
+#   description: aller-at-once-description
+#   showInVote: false #Please god dont do this
+#   rules:
+#     - Nukeops
+#     - Traitor
+#     - Revolutionary
+#     - Zombie
+#     - Changeling # imp edit
+#     - Heretic # imp edit
+#     - Wizard
+#     - Xenoborgs
+#     - BasicStationEventScheduler
+#     - KesslerSyndromeScheduler
+#     - MeteorSwarmMildScheduler
+#     - MeteorSwarmScheduler
+#     - RampingStationEventScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - SpaceTrafficControlFriendlyEventScheduler
+#     - BasicRoundstartVariation
 
 - type: gamePreset
   id: Extended
@@ -88,7 +89,8 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBMildMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -117,7 +119,8 @@
   - DynamicRule
   - DummyNonAntag
   - DynamicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBMildMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -156,7 +159,8 @@
   - Traitor
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -186,7 +190,8 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -204,7 +209,8 @@
   - Revolutionary
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -220,7 +226,8 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -236,7 +243,8 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizardNoXenoborg # no two motherships
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBMildMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -255,7 +263,8 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # QB
+  - QBBasicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -272,6 +281,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - KesslerSyndromeScheduler
+  # - KesslerSyndromeScheduler # QB
+  - QBCalamityMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
