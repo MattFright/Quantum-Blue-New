@@ -25,15 +25,15 @@
         - ReagentId: Mopwata
           Quantity: 100000
         - ReagentId: VentCrud
-          Quantity: 10000
+          Quantity: 5000
+        - ReagentId: GastroToxin
+          Quantity: 50000
         - ReagentId: Mold
-          Quantity: 10000
+          Quantity: 5000
         - ReagentId: ToxinTrash
           Quantity: 1000
         - ReagentId: Slime
-          Quantity: 25000
-        - ReagentId: Ammonia
-          Quantity: 1000
+          Quantity: 50000
   - type: DrainableSolution
     solution: pool
   - type: SpeedModifierContacts
