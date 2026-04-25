@@ -29,12 +29,14 @@
           !type:PhysShapeCircle
           radius: 0.4
         density: 100
-        hard: true
+        hard: false
         layer:
         - LargeMobLayer
         mask:
         - Impassable
         - BulletImpassable
+  - type: Damageable
+    damageContainer: Inorganic
   - type: Explosive
     explosionType: Default
     totalIntensity: 100.0
@@ -42,6 +44,18 @@
     maxIntensity: 45
   - type: TileFrictionModifier
     modifier: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ExplodeBehavior
 
 - type: entity
   parent: QBBaseMeteor
@@ -57,7 +71,7 @@
           !type:PhysShapeCircle
           radius: 0.25
         density: 100
-        hard: true
+        hard: false
         layer:
         - LargeMobLayer
         mask:
@@ -80,7 +94,7 @@
           !type:PhysShapeCircle
           radius: 0.5
         density: 100
-        hard: true
+        hard: false
         layer:
         - LargeMobLayer
         mask:
@@ -104,7 +118,7 @@
           !type:PhysShapeCircle
           radius: 0.8
         density: 100
-        hard: true
+        hard: false
         layer:
         - LargeMobLayer
         mask:
@@ -128,7 +142,7 @@
           !type:PhysShapeCircle
           radius: 0.1
         density: 100
-        hard: true
+        hard: false
         layer:
         - LargeMobLayer
         mask:

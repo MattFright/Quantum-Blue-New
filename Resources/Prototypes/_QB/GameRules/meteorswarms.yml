@@ -149,7 +149,7 @@
 
 - type: entity
   parent: BaseGameRule
-  id: QBCalamityMeteorSwarmScheduler
+  id: QBCataclismicMeteorSwarmScheduler
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
@@ -158,4 +158,4 @@
       min: 750 # 12.5 min
       max: 930 # 17.5 min
     scheduledGameRules: !type:NestedSelector
-      tableId: QBCalamityMeteorSwarmTable
+      tableId: QBCataclismicMeteorSwarmTable

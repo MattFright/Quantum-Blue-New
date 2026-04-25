@@ -282,6 +282,6 @@
   - Zombie
   - BasicStationEventScheduler
   # - KesslerSyndromeScheduler # QB
-  - QBCalamityMeteorSwarmScheduler # QB
+  - QBCataclismicMeteorSwarmScheduler # QB
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
