@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 05/25/2026 21:21:45
-  entityCount: 6672
+  time: 05/26/2026 05:53:47
+  entityCount: 6673
 maps:
 - 1
 grids:
@@ -5643,7 +5643,7 @@ entities:
       pos: -34.5,-13.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -78114.81
+      secondsUntilStateChange: -78713.58
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17960,7 +17960,7 @@ entities:
   - uid: 6265
     components:
     - type: Transform
-      pos: -53.5,4.5
+      pos: 6.5,-4.5
       parent: 3
 - proto: CryogenicSleepUnit
   entities:
@@ -33162,6 +33162,18 @@ entities:
     - type: Transform
       pos: -47.5,1.5
       parent: 3
+- proto: LockerEvidence
+  entities:
+  - uid: 6257
+    components:
+    - type: Transform
+      pos: -8.5,-21.5
+      parent: 3
+  - uid: 6673
+    components:
+    - type: Transform
+      pos: -8.5,-20.5
+      parent: 3
 - proto: LockerFreezer
   entities:
   - uid: 308
@@ -33262,6 +33274,14 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Security
+    - type: Fixtures
+      fixtures: {}
+  - uid: 650
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -5.5,-22.5
+      parent: 3
     - type: Fixtures
       fixtures: {}
 - proto: LockerWallMedical
@@ -40177,18 +40197,6 @@ entities:
           occludes: True
           ents:
           - 1101
-- proto: SuitStorageEVAPrisoner
-  entities:
-  - uid: 649
-    components:
-    - type: Transform
-      pos: -8.5,-20.5
-      parent: 3
-  - uid: 650
-    components:
-    - type: Transform
-      pos: -8.5,-21.5
-      parent: 3
 - proto: SuitStorageSec
   entities:
   - uid: 700
@@ -41472,10 +41480,10 @@ entities:
       bodyType: Dynamic
 - proto: TelecomServerFilled
   entities:
-  - uid: 6257
+  - uid: 649
     components:
     - type: Transform
-      pos: 6.5,-4.5
+      pos: -53.5,4.5
       parent: 3
 - proto: ThermomachineFreezerMachineCircuitBoard
   entities:
