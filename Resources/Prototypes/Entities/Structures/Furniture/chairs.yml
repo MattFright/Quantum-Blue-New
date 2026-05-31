@@ -131,6 +131,7 @@
   description: Apply butt.
   components:
   - type: Sprite
+    sprite: _QB/Structures/Furniture/Chairs/stool.rsi # QB
     state: stool
   - type: Construction
     graph: Seat
@@ -435,7 +436,8 @@
   description: Make sure you sit *really* gently.
   components:
   - type: Sprite
-    state: card-stool
+    sprite: _QB/Structures/Furniture/Chairs/cardboard_stool.rsi # QB
+    state: cardboard-stool # QB
   - type: Construction
     graph: Seat
     node: stoolCard

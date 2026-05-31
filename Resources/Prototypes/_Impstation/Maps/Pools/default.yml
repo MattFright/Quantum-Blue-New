@@ -8,7 +8,6 @@
   - Cluster
   - CogImp
   - CoreImp
-  - ElkridgeImp
   - GateImp
   - MarathonImp
   - OasisImp
@@ -29,10 +28,9 @@
   - Pathway
   - Whisper
   # DELTAV MAPS:
-  - Chibi
+  #- Chibi
   - Submarine
-  - Chibi
-  - Asterisk
+  #- Asterisk
   # HARMONY MAPS:
   - Barratry
   - Eclipse

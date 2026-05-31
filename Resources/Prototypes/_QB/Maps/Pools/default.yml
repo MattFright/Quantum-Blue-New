@@ -1,0 +1,14 @@
+- type: gameMapPool
+  id: DefaultMapPoolQB
+  maps:
+  # WIZDEN MAPS:
+  - ElkridgeQB
+  # DV MAPS:
+  - AsteriskQB
+  - ByoinQB
+  - ChibiQB
+  - PebbleQB
+  # VDS MAPS:
+  - Foundry
+  # QB MAPS:
+  - Dash
