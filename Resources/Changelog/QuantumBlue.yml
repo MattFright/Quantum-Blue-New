@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Mosquitoes. Who forgot to return the slab?
+    id: 145
+    time: '2026-08-11T22:36:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/181
   - author: Moodotsuki
     changes:
       - type: Tweak
