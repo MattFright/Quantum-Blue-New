@@ -57,7 +57,7 @@ accent-pg-words-19 = what the fuck
 accent-pg-words-replace-19 = what the flip
 
 accent-pg-words-20 = oh fuck
-accent-pg-words-replace-20 = oh crap
+accent-pg-words-replace-20 = oh frick
 
 accent-pg-words-21 = fuckface
 accent-pg-words-replace-21 = jerkface
