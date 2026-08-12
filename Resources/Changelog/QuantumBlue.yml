@@ -1,4 +1,11 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: The whole game looks a little different now! Yes, again!
+    id: 146
+    time: '2026-08-12T07:31:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/182
   - author: rebe83
     changes:
       - type: Add
