@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Medical Posters (54, 55, 64, and 65) by SixValentine. Pathway and Union map posters by happy99 for Impstation.",
+    "copyright": "Medical Posters by SixValentine",
     "size": {
         "x": 32,
         "y": 32
@@ -21,12 +21,6 @@
         },
         {
             "name": "poster49_legit"
-        },
-        {
-            "name": "pathwaymap"
-        },
-        {
-            "name": "unionmap"
         }
     ]
 }

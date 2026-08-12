@@ -919,6 +919,16 @@ entities:
             3512: -2,63
             3572: 3,60
         - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteCornerNe
+          decals:
+            3839: -29,40
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteCornerNe
+          decals:
+            3942: -29,40
+        - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteCornerNe
           decals:
@@ -948,6 +958,16 @@ entities:
             2883: -39,40
             3573: 2,60
         - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteCornerNw
+          decals:
+            3838: -39,40
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteCornerNw
+          decals:
+            3941: -39,40
+        - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteCornerNw
           decals:
@@ -964,6 +984,16 @@ entities:
           decals:
             2881: -29,35
             3571: 3,52
+        - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteCornerSe
+          decals:
+            3837: -29,35
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteCornerSe
+          decals:
+            3943: -29,35
         - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteCornerSe
@@ -1159,6 +1189,22 @@ entities:
             3568: 2,51
             3570: -2,55
         - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteLineE
+          decals:
+            3856: -29,36
+            3857: -29,37
+            3858: -29,38
+            3859: -29,39
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteLineE
+          decals:
+            3930: -29,39
+            3931: -29,38
+            3932: -29,37
+            3935: -29,36
+        - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteLineE
           decals:
@@ -1222,6 +1268,30 @@ entities:
           decals:
             1850: 30,9
             1859: 33,9
+        - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteLineN
+          decals:
+            3860: -38,40
+            3864: -34,40
+            3865: -33,40
+            3866: -32,40
+            3867: -31,40
+            3868: -30,40
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteLineN
+          decals:
+            3905: -37,40
+            3906: -36,40
+            3907: -35,40
+            3908: -33,40
+            3909: -34,40
+            3910: -32,40
+            3911: -31,40
+            3912: -30,40
+            3913: -38,40
+            3929: -30,40
         - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteLineN
@@ -1287,6 +1357,33 @@ entities:
             1858: 31,9
             1860: 34,9
         - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteLineS
+          decals:
+            3844: -38,35
+            3845: -37,35
+            3846: -36,35
+            3847: -35,35
+            3848: -34,35
+            3849: -33,35
+            3850: -32,35
+            3851: -31,35
+            3852: -30,35
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteLineS
+          decals:
+            3918: -38,35
+            3919: -37,35
+            3920: -36,35
+            3921: -35,35
+            3922: -34,35
+            3923: -33,35
+            3924: -32,35
+            3925: -31,35
+            3926: -30,35
+            3928: -38,35
+        - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteLineS
           decals:
@@ -1343,6 +1440,22 @@ entities:
             3538: 2,58
             3539: 2,59
             3540: -2,51
+        - node:
+            color: '#B3B3B3FF'
+            id: BrickTileWhiteLineW
+          decals:
+            3840: -39,39
+            3841: -39,38
+            3842: -39,37
+            3843: -39,36
+        - node:
+            color: '#BEC3BEFF'
+            id: BrickTileWhiteLineW
+          decals:
+            3914: -39,39
+            3915: -39,38
+            3916: -39,37
+            3917: -39,36
         - node:
             color: '#DE3A3A96'
             id: BrickTileWhiteLineW
@@ -2126,6 +2239,19 @@ entities:
             1913: -13,45
             1914: -13,43
         - node:
+            color: '#4B709CFF'
+            id: HalfTileOverlayGreyscale
+          decals:
+            3813: -38,40
+            3817: -34,40
+            3818: -33,40
+            3819: -32,40
+            3820: -31,40
+            3821: -30,40
+            3896: -37,40
+            3897: -36,40
+            3898: -35,40
+        - node:
             color: '#52B4E996'
             id: HalfTileOverlayGreyscale
           decals:
@@ -2334,6 +2460,19 @@ entities:
             1907: -14,42
             1908: -13,42
             1915: -13,44
+        - node:
+            color: '#4B709CFF'
+            id: HalfTileOverlayGreyscale180
+          decals:
+            3796: -38,35
+            3797: -37,35
+            3798: -35,35
+            3799: -36,35
+            3800: -34,35
+            3801: -33,35
+            3802: -32,35
+            3803: -31,35
+            3804: -30,35
         - node:
             color: '#52B4E996'
             id: HalfTileOverlayGreyscale180
@@ -2569,6 +2708,14 @@ entities:
           decals:
             1911: -15,44
         - node:
+            color: '#4B709CFF'
+            id: HalfTileOverlayGreyscale270
+          decals:
+            3809: -39,36
+            3810: -39,37
+            3811: -39,38
+            3812: -39,39
+        - node:
             color: '#52B4E996'
             id: HalfTileOverlayGreyscale270
           decals:
@@ -2705,6 +2852,14 @@ entities:
             id: HalfTileOverlayGreyscale90
           decals:
             1909: -11,43
+        - node:
+            color: '#4B709CFF'
+            id: HalfTileOverlayGreyscale90
+          decals:
+            3805: -29,36
+            3806: -29,37
+            3807: -29,38
+            3808: -29,39
         - node:
             color: '#52B4E996'
             id: HalfTileOverlayGreyscale90
@@ -3615,6 +3770,11 @@ entities:
           decals:
             1910: -15,45
         - node:
+            color: '#4B709CFF'
+            id: ThreeQuarterTileOverlayGreyscale
+          decals:
+            3823: -39,40
+        - node:
             color: '#52B4E996'
             id: ThreeQuarterTileOverlayGreyscale
           decals:
@@ -3699,6 +3859,11 @@ entities:
             id: ThreeQuarterTileOverlayGreyscale180
           decals:
             1905: -11,42
+        - node:
+            color: '#4B709CFF'
+            id: ThreeQuarterTileOverlayGreyscale180
+          decals:
+            3822: -29,35
         - node:
             color: '#52B4E996'
             id: ThreeQuarterTileOverlayGreyscale180
@@ -3795,6 +3960,11 @@ entities:
           decals:
             2341: -20,24
         - node:
+            color: '#4B709CFF'
+            id: ThreeQuarterTileOverlayGreyscale270
+          decals:
+            3832: -39,35
+        - node:
             color: '#52B4E996'
             id: ThreeQuarterTileOverlayGreyscale270
           decals:
@@ -3868,6 +4038,11 @@ entities:
             1962: -39,30
             1963: -40,31
             1994: -51,32
+        - node:
+            color: '#4B709CFF'
+            id: ThreeQuarterTileOverlayGreyscale90
+          decals:
+            3827: -29,40
         - node:
             color: '#52B4E996'
             id: ThreeQuarterTileOverlayGreyscale90
@@ -4484,7 +4659,8 @@ entities:
           2,2:
             0: 65535
           2,3:
-            0: 65520
+            3: 16
+            0: 65504
           2,4:
             0: 4095
           2,-1:
@@ -5960,6 +6136,20 @@ entities:
         - volume: 2500
           immutable: True
           moles: {}
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 21.813705
+            Nitrogen: 82.06108
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Nitrogen: 103.92799
+        - volume: 2500
+          temperature: 235
+          moles:
+            Oxygen: 27.225372
+            Nitrogen: 102.419266
         - volume: 2500
           temperature: 293.14993
           moles:
@@ -30989,6 +31179,13 @@ entities:
     - type: Transform
       pos: 67.44496,22.285267
       parent: 2
+  entities:
+    components:
+    - type: Transform
+- proto: CaptainIDCard
+  - uid: 4385
+      pos: -49.54661,34.594242
+      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 4385
@@ -37755,6 +37952,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -32.5,36.5
+      parent: 2
+- proto: CommandmentCircuitBoard
+  entities:
+  - uid: 5472
+    components:
+    - type: Transform
+      pos: 42.386684,48.789955
       parent: 2
 - proto: CommandmentCircuitBoard
   entities:
@@ -79280,6 +79484,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 37.5,35.5
       parent: 2
+  - uid: 11080
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 37.5,35.5
+      parent: 2
   - uid: 11081
     components:
     - type: Transform
@@ -89324,6 +89534,14 @@ entities:
     - type: Transform
       pos: 25.5,49.5
       parent: 2
+- proto: SpawnMobSlug
+  entities:
+  - uid: 11053
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,-0.5
+      parent: 2
 - proto: SpawnMobSmile
   entities:
   - uid: 12431
@@ -90489,6 +90707,9 @@ entities:
     - type: Transform
       pos: 43.5,49.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - ResearchDirector
 - proto: StationAnchor
   entities:
   - uid: 16063
@@ -94352,6 +94573,8 @@ entities:
       bodyType: Dynamic
     - type: PointLight
       color: '#FF3300FF'
+    - type: Physics
+      bodyType: Dynamic
 - proto: TelecomServerCircuitboard
   entities:
   - uid: 13109
@@ -108067,6 +108290,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 15491
+      - 16114
 - proto: WeaponEnergyTurretSecurityControlPanel
   entities:
   - uid: 15491
