@@ -24,18 +24,14 @@ heretic-role-greeting-short =
     To draw a transmutation rune, click the floor with a writing tool while your mansus grasp is active in your off-hand.
     To sacrifice someone to the rune, drag a corpse onto it, select the "Heartbeat of the Mansus" ritual with an empty hand, and activate it by using your Mansus Grasp on the rune.
 
-## generic minion
-heretic-minion-greeting =
+## ghoul
+heretic-ghoul-greeting =
     You have been summoned into this world by {CAPITALIZE(THE($ent))}!
     You must aid {OBJECT($ent)} in {POSS-ADJ($ent)} journey to ascension and protect {OBJECT($ent)} at all costs.
     You may follow other heretics if your master is beyond resurrection.
-heretic-minion-greeting-noname =
+heretic-ghoul-greeting-noname =
     You have been summoned into this world by eldritch forces.
-    Obey the orders of heretics no matter what.
-heretic-minion-no-attack =
-    You cannot harm your master!
-heretic-kin-no-attack =
-    You cannot harm your kin!
+    Obey the orders of your masters no matter what.
 
 ghostrole-ghoul-name = Ghoul
 ghostrole-prophet-name = Raw Prophet
