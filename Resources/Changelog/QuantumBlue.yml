@@ -1,4 +1,11 @@
 Entries:
+  - author: Sage-Jones
+    changes:
+      - type: Add
+        message: Upmerged with Impstation as of August 11th. Check the upstream changelog for all details.
+    id: 147
+    time: '2026-08-12T10:33:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/183
   - author: MattFright
     changes:
       - type: Tweak
