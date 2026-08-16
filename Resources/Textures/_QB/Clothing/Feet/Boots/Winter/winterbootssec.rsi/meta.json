@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Original artwork by MattFright.",
+    "copyright": "Original artwork by MattFright",
     "size": {
         "x": 32,
         "y": 32
@@ -11,7 +11,7 @@
             "name": "icon"
         },
         {
-            "name": "equipped-INNERCLOTHING",
+            "name": "equipped-FEET",
             "directions": 4
         },
         {
@@ -20,10 +20,6 @@
         },
         {
             "name": "inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "folded-equipped-INNERCLOTHING",
             "directions": 4
         }
     ]

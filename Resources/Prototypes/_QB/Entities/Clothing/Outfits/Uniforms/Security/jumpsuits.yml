@@ -30,3 +30,14 @@
     sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_grey.rsi
   - type: Clothing
     sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_grey.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
+  id: ClothingUniformJumpsuitTurtleneckQB
+  name: security turtleneck
+  description: Alternate security personnel uniform.
+  components:
+  - type: Sprite
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_turt.rsi
+  - type: Clothing
+    sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/security_turt.rsi
