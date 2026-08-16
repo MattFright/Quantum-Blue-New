@@ -5,6 +5,8 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Map.Enumerators;
 using static Robust.Client.GameObjects.SpriteComponent;
 
+// QB Note, Please read for changes. Okay, basically there's a bunch of small changes to method signatures and the like to make it so that the sprite and state recalculation doesn't have to create queries every frame. It should only create them when there's actually work to do.
+
 namespace Content.Client._Funkystation.EdgeTrim
 {
     [UsedImplicitly]
@@ -12,9 +14,8 @@ namespace Content.Client._Funkystation.EdgeTrim
     {
         [Dependency] private SharedMapSystem _mapSystem = default!;
         [Dependency] private SpriteSystem _sprite = default!;
-        [Dependency] private EntityQuery<EdgeTrimComponent> _edgeTrimQuery = default!;
-        [Dependency] private EntityQuery<SpriteComponent> _spriteQuery = default!;
-
+        //[Dependency] private EntityQuery<EdgeTrimComponent> _edgeTrimQuery = default!;
+        //[Dependency] private EntityQuery<SpriteComponent> _spriteQuery = default!;
         private readonly Queue<EntityUid> _dirtyEntities = new();
         private readonly Queue<EntityUid> _anchorChangedEntities = new();
 
@@ -89,11 +90,16 @@ namespace Content.Client._Funkystation.EdgeTrim
         public override void FrameUpdate(float frameTime)
         {
             base.FrameUpdate(frameTime);
-
+            
+            //QB Add
+            var xformQuery = GetEntityQuery<TransformComponent>();
+            var smoothQuery = GetEntityQuery<EdgeTrimComponent>();
+            var spriteQuery = GetEntityQuery<SpriteComponent>();
+            //QB Add end
             // first process anchor state changes.
             while (_anchorChangedEntities.TryDequeue(out var uid))
             {
-                if (!TryComp(uid, out TransformComponent? xform))
+                if (!xformQuery.TryGetComponent(uid, out var xform)) //QB change comonent check to query
                     continue;
 
                 if (xform.MapID == MapId.Nullspace)
@@ -104,7 +110,7 @@ namespace Content.Client._Funkystation.EdgeTrim
                     continue;
                 }
 
-                DirtyNeighbours(uid, comp: null, xform);
+                DirtyNeighbours(uid, comp: null, xform, smoothQuery); //QB add smoothQuery
             }
 
             // Next, update actual sprites.
@@ -116,11 +122,16 @@ namespace Content.Client._Funkystation.EdgeTrim
             // Performance: This could be spread over multiple updates, or made parallel.
             while (_dirtyEntities.TryDequeue(out var uid))
             {
-                CalculateNewSprite(uid);
+                CalculateNewSprite(uid, spriteQuery, smoothQuery, xformQuery); //QB add all arguments except uid
             }
         }
 
-        private void CalculateNewSprite(EntityUid uid, EdgeTrimComponent? smooth = null)
+        //QB edit method signature to add queries as arguments to avoid creating them every frame
+        private void CalculateNewSprite(EntityUid uid,
+            EntityQuery<SpriteComponent> spriteQuery,
+            EntityQuery<EdgeTrimComponent> smoothQuery,
+            EntityQuery<TransformComponent> xformQuery,
+            EdgeTrimComponent? smooth = null)
         {
             TransformComponent? xform;
             Entity<MapGridComponent>? gridEntity = null;
@@ -128,7 +139,7 @@ namespace Content.Client._Funkystation.EdgeTrim
             // The generation check prevents updating an entity multiple times per tick.
             // As it stands now, it's totally possible for something to get queued twice.
             // Generation on the component is set after an update so we can cull updates that happened this generation.
-            if (!_edgeTrimQuery.Resolve(uid, ref smooth, false)
+            if (!smoothQuery.Resolve(uid, ref smooth, false) //QB edit to use earlier generated smoothQuery 
                 || smooth.Mode == EdgeTrimMode.NoSprite
                 || smooth.UpdateGeneration == _generation
                 || !smooth.Enabled
@@ -140,7 +151,7 @@ namespace Content.Client._Funkystation.EdgeTrim
             xform = Transform(uid);
             smooth.UpdateGeneration = _generation;
 
-            if (!_spriteQuery.TryGetComponent(uid, out var sprite))
+            if (!spriteQuery.TryGetComponent(uid, out var sprite)) //QB edit to use earlier referenced explicit spriteQuery
             {
                 Log.Error($"Encountered a edge-trimming entity without a sprite: {ToPrettyString(uid)}");
                 RemCompDeferred(uid, smooth);
@@ -182,11 +193,11 @@ namespace Content.Client._Funkystation.EdgeTrim
             _sprite.LayerSetRsiState(spriteEnt.AsNullable(), CornerLayers.SW, $"{smooth.StateBase}-{_trimLookup[cornerSW]}");
         }
 
-        private int TrimEntity(EdgeTrimComponent smooth, AnchoredEntitiesEnumerator candidates)
+        private int TrimEntity(EdgeTrimComponent smooth, AnchoredEntitiesEnumerator candidates, EntityQuery<EdgeTrimComponent> smoothQuery) // QB add smoothQuery argument to avoid creating it every frame
         {
             while (candidates.MoveNext(out var entity))
             {
-                if (_edgeTrimQuery.TryGetComponent(entity, out var other) && other.SmoothKey != null
+            if (smoothQuery.TryGetComponent(entity, out var other) && other.SmoothKey != null // QB edit to use smoothQuery
                                                                           && other.Enabled)
                 {
                     if (other.SmoothKey == smooth.SmoothKey || smooth.AdditionalKeys.Contains(other.SmoothKey))
@@ -207,17 +218,19 @@ namespace Content.Client._Funkystation.EdgeTrim
         {
             var gridUid = gridEntity.Owner;
             var grid = gridEntity.Comp;
+            var smoothQuery = GetEntityQuery<EdgeTrimComponent>(); //QB add smoothQuery to avoid creating it every frame
 
             int[] keys = new int[8];
             var pos = _mapSystem.TileIndicesFor(gridUid, grid, xform.Coordinates);
-            keys[0] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.South)));
-            keys[1] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.SouthEast)));
-            keys[2] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.East)));
-            keys[3] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.NorthEast)));
-            keys[4] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.North)));
-            keys[5] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.NorthWest)));
-            keys[6] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.West)));
-            keys[7] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.SouthWest)));
+            // QB edit, use the smoothQuery to avoid creating it every frame
+            keys[0] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.South)), smoothQuery);
+            keys[1] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.SouthEast)), smoothQuery);
+            keys[2] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.East)), smoothQuery);
+            keys[3] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.NorthEast)), smoothQuery);
+            keys[4] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.North)), smoothQuery);
+            keys[5] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.NorthWest)), smoothQuery);
+            keys[6] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.West)), smoothQuery);
+            keys[7] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.SouthWest)), smoothQuery);
 
             int cornerSE = keys[0] + 3 * keys[1] + 9 * keys[2];
             int cornerNE = keys[2] + 3 * keys[3] + 9 * keys[4];
@@ -237,9 +250,13 @@ namespace Content.Client._Funkystation.EdgeTrim
             }
         }
 
-        private void DirtyNeighbours(EntityUid uid, EdgeTrimComponent? comp = null, TransformComponent? transform = null)
-        {
-            if (!_edgeTrimQuery.Resolve(uid, ref comp) || !comp.Running)
+        private void DirtyNeighbours(EntityUid uid, EdgeTrimComponent? comp = null, TransformComponent? transform = null, EntityQuery<EdgeTrimComponent>? smoothQuery = null) // QB edit to add smoothQuery argument to avoid creating it every frame
+        {   
+            //QB add, if smoothQuery is null, get it from the system
+            if (smoothQuery == null)
+                smoothQuery = GetEntityQuery<EdgeTrimComponent>();
+
+            if (!smoothQuery.Value.Resolve(uid, ref comp) || !comp.Running) // QB edit to use smoothQuery
                 return;
 
             _dirtyEntities.Enqueue(uid);
