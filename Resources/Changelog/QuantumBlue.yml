@@ -1,4 +1,11 @@
 Entries:
+  - author: Soup4Food
+    changes:
+      - type: Fix
+        message: A bunch of little slasher things
+    id: 151
+    time: '2026-08-19T16:02:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/189
   - author: Ecramox
     changes:
       - type: Add
