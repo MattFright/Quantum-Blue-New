@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Evil heretic books have stopped showing up. phew!
+    id: 148
+    time: '2026-08-19T15:23:12.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/195
   - author: Sage-Jones
     changes:
       - type: Add
