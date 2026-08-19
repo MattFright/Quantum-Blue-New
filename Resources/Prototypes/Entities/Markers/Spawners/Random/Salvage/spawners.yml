@@ -432,6 +432,7 @@
         - !type:NestedSelector
           rolls: 7, 10
           tableId: TreasureCoinPileRare
+        - id: MobBigBeeSpace # Quantum Blue
       #- id: MobHivebot (solo hivebot spawn)
 
 
@@ -542,6 +543,8 @@
       - id: MobHivelord
         weight: 35
       - id: MobBasilisk
-        weight: 20
+        weight: 15 # QB, lowered weight by 5 to make room for Space Bees
       - id: MobBoarSpace
         weight: 5
+      - id: MobBigBeeSpace # Quantum Blue
+        weight: 5 # QB

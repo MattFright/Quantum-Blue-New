@@ -1,0 +1,78 @@
+- type: reagent
+  id: Apitoxin
+  name: reagent-name-apitoxin
+  group: Toxins
+  desc: reagent-desc-apitoxin
+  flavor: bitter
+  color: "#cccccc"
+  physicalDesc: reagent-physical-desc-clear
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
+
+- type: reagent
+  id: SpaceApitoxin
+  name: reagent-name-space-apitoxin
+  group: Toxins
+  desc: reagent-desc-space-apitoxin
+  flavor: bitter
+  color: "#9b0328"
+  physicalDesc: reagent-physical-desc-shiny
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+            Heat: -2 # funni
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: SpaceApitoxin
+          max: 35
+        type: Local
+        visualType: LargeCaution
+        messages: [ "fresium-effect-freeze-insides"]
+        probability: 0.05
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: SpaceApitoxin
+          max: 35
+        type: Local
+        visualType: LargeCaution
+        messages: [ "fresium-effect-slow"]
+        probability: 0.2
+      - !type:AdjustTemperature
+        conditions:
+        - !type:TemperatureCondition
+          min: 160.15 # not quite enough for cryo, but can speed it up if you wanna take the risk
+        amount: -20
+      - !type:MovementSpeedModifier
+        conditions:
+        - !type:ReagentCondition
+          reagent: SpaceApitoxin
+          max: 40 # slows when less than 40
+        walkSpeedModifier: 0.6
+        sprintSpeedModifier: 0.6
+      - !type:MovementSpeedModifier
+        conditions:
+        - !type:ReagentCondition
+          reagent: SpaceApitoxin
+          min: 40 # your legs stop working when above 40
+        walkSpeedModifier: 0.00
+        sprintSpeedModifier: 0.00
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: SpaceApitoxin
+          min: 40
+        type: Local
+        visualType: LargeCaution
+        messages: [ "fresium-effect-frozen"]
+        probability: 0.4

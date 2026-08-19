@@ -1,0 +1,27 @@
+- type: entity
+  parent: MarkerBase
+  id: SpawnBigBeeSpace
+  name: space bee spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: spacebee
+      sprite: _QB/Mobs/Animals/spacebee.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobBigBeeSpace
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnBeeSpace
+  name: space bee drone spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: 0
+      sprite: _QB/Mobs/Animals/spacebeedrone.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobBeeSpace

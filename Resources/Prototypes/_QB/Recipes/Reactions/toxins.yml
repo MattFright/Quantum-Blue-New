@@ -1,0 +1,9 @@
+- type: reaction
+  id: SpaceApitoxin
+  reactants:
+    SpaceHoney:
+      amount: 1
+    Cryoxadone:
+      amount: 1
+  products:
+    SpaceApitoxin: 2

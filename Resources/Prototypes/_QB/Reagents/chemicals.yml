@@ -1,0 +1,12 @@
+- type: reagent
+  id: SpaceHoney
+  name: reagent-name-space-honey
+  desc: reagent-desc-space-honey
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: honey
+  color: "#57062d"
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+  pricePerUnit: 30

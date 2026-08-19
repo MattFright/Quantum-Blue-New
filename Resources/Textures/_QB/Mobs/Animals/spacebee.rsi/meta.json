@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Ecramox (github)",
+  "states": [
+    {
+      "name": "spacebee",
+      "directions": 4
+    },
+    {
+      "name": "spacebee_unshaded",
+      "directions": 4
+    },
+    {
+      "name": "dead"
+    },
+    {
+      "name": "dead_unshaded"
+    }
+  ]
+}

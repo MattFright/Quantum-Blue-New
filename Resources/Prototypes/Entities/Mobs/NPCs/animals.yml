@@ -138,6 +138,10 @@
         Base: dead
   - type: Extractable
     grindableSolutionName: food
+    juiceSolution: # QB change start
+      reagents:
+      - ReagentId: Apitoxin
+        Quantity: 3 # QB change end
   - type: SolutionContainerManager
     solutions:
       food:
@@ -169,7 +173,7 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
-  - type: ZombieImmune
+#  - type: ZombieImmune # QB
   - type: Destructible
     thresholds:
     - trigger:
@@ -191,10 +195,10 @@
   - type: CombatMode
   - type: MeleeWeapon
     angle: 0
-    animation: WeaponArcBite
+    animation: WeaponArcStatic # QB, changed from WeaponArcBite because why is a bee attacking by biting
     damage:
       types:
-        Poison: 2
+        # Poison: 2 # QB removed because of the addition of Apitoxin
         Piercing: 1
   - type: InputMover
   - type: MobMover
@@ -211,6 +215,17 @@
         Quantity: 0.1
   - type: ZombieImmune
   - type: AlwaysRevolutionaryConvertible #imp
+  # QB changes start
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: Apitoxin
+          Quantity: 10
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 1
+  # QB changes end
 
 
 - type: entity
