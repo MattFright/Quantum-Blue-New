@@ -10,16 +10,18 @@
     layers:
     - state: icon
       map: ["base"]
-  - type: OnUseTimerTrigger
-    delay: 10
-    delayOptions: [10, 15, 20, 25]
-    initialBeepDelay: 0
-    beepSound:
-      path: /Audio/Effects/Cargo/buzz_two.ogg
-      params:
-        volume: -6
-    startOnStick: true
-    canToggleStartOnStick: true
+  # QB changes start - we don't have this component, just keep parented values from seismic charge it's functionally identical
+  #- type: OnUseTimerTrigger
+  #  delay: 10
+  #  delayOptions: [10, 15, 20, 25]
+  #  initialBeepDelay: 0
+  #  beepSound:
+  #    path: /Audio/Effects/Cargo/buzz_two.ogg
+  #    params:
+  #      volume: -6
+  #  startOnStick: true
+  #  canToggleStartOnStick: true
+  # QB changes end
   - type: Explosive
     explosionType: DemolitionCharge
     totalIntensity: 10

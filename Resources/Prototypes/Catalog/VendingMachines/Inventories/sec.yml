@@ -28,7 +28,7 @@
     TicketPad: 5 # imp
     Tourniquet: 5
     Zipties: 12
-    BreachingCharge: 8 # DeltaV - added breaching charges  
+    BreachingCharge: 4 # DeltaV - added breaching charges - QB - only 4 instead of 8 
     # security officers need to follow a diet regimen!
   contrabandInventory:
     WeaponMeleeNeedle: 2
