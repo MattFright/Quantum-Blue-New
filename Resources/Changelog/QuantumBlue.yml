@@ -1,4 +1,19 @@
 Entries:
+  - author: Ecramox
+    changes:
+      - type: Add
+        message: Space bees can now be found in space! You can find their hive as a large wreck from the salvage magnet.
+      - type: Add
+        message: Space bees have a rare chance of spawning on the VGroid and regular debris magnet pulls. Beware.
+      - type: Tweak
+        message: >-
+          Bees now use a stinging attack animation instead of a biting animation. Their poison is now slightly different
+          but exactly the same.
+      - type: Tweak
+        message: Bees can now be zombies. Get scared get scared get scared
+    id: 150
+    time: '2026-08-19T15:57:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/188
   - author: rebe83
     changes:
       - type: Fix
