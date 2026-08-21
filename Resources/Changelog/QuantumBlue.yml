@@ -1,6 +1,15 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Add
+        message: Medical belts can now clip on medkits.
+      - type: Add
+        message: Security belts and webbings now have sidearm holsters. Yippee!!
+    id: 154
+    time: '2026-08-21T16:23:32.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/200
+  - author: rebe83
+    changes:
       - type: Remove
         message: Zombies, carp, and spiders no longer have a collective mind channel to speak in.
     id: 153
