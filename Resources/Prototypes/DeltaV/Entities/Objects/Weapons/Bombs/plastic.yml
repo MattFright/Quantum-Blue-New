@@ -24,7 +24,9 @@
   # QB changes end
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 10
-    intensitySlope: 10
-    maxIntensity: 10
+    # QB edit begin - make it only a 1x1 explosion
+    totalIntensity: 5 # from 10 to 5
+    intensitySlope: 5 # from 10 to 5
+    maxIntensity: 15 # from 10 to 15
+    # QB edit end
     canCreateVacuum: false
