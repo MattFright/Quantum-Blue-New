@@ -2,6 +2,13 @@ Entries:
   - author: rebe83
     changes:
       - type: Tweak
+        message: Zombies cannot recognize initial infected and will attack them. Nobody is safe!
+    id: 156
+    time: '2026-08-21T16:28:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/203
+  - author: rebe83
+    changes:
+      - type: Tweak
         message: initial and regular infected take poison damage as they turn into zombies.
     id: 155
     time: '2026-08-21T16:26:36.0000000+00:00'
