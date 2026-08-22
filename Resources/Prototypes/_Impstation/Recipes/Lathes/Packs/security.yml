@@ -54,10 +54,18 @@
   - MagazinePistolP2Incendiary
   - MagazinePistolP2Uranium
   - PowerCellBlasterMilitary
+  # qb changes begin
   - MagazineLightRifleUranium #qb, adding other .30 mags
   - MagazineLightRifleIncendiary #qb, adding other .30 mags
-  - CartridgeSpecialHoly # qb - .38 Special revolver, Holy ammo
-  - CartridgeSpecialMindbreaker # qb .38 special revolver, mindbreaker ammo
+  - CartridgeSpecialHoly
+  - CartridgeSpecialMindbreaker
+  - CartridgeSpecialIncendiary
+  - CartridgeSpecialUranium
+  - CartridgeSpecialMindbreaker
+  - MagazineBoxSpecialIncendiary
+  - MagazineBoxSpecialUranium
+  - MagazineBoxSpecialMindbreaker
+  # qb changes end
 
 - type: latheRecipePack
   id: SecurityWeaponsImp
