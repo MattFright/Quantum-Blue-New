@@ -131,6 +131,14 @@
   - MagazineShotgunIncendiary
   - SpeedLoaderMagnumIncendiary
   - SpeedLoaderMagnumUranium
+  # qb changes begin
+  - MagazineBoxSpecialIncendiary
+  - MagazineBoxSpecialUranium
+  - MagazineBoxSpecialMindbreaker
+  - SpeedLoaderSpecialUranium
+  - CartridgeSpecialHoly
+  - CartridgeSpecialMindbreaker
+  # qb changes end
 
 - type: latheRecipePack
   parent: SecurityWeaponsImp # imp

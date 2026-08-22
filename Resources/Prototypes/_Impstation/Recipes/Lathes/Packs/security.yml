@@ -25,8 +25,12 @@
   - MagazinePistolP2
   - PowerCellBlaster
   - PowerCellStarflare
-  - MagazineBoxSpecial # QB - .38 Special revolver
-  - SpeedLoaderSpecial # QB - .38 Special revolver
+  # qb additions start
+  - MagazineBoxSpecial
+  - SpeedLoaderSpecial
+  - SpeedLoaderSpecialEmpty
+  - MagazineBoxSpecialPractice
+  # qb additions end
 
 - type: latheRecipePack
   id: SteelBriefcaseImp
