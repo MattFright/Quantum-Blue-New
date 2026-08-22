@@ -25,6 +25,8 @@
   - MagazinePistolP2
   - PowerCellBlaster
   - PowerCellStarflare
+  - MagazineBoxSpecial # QB - .38 Special revolver
+  - SpeedLoaderSpecial # QB - .38 Special revolver
 
 - type: latheRecipePack
   id: SteelBriefcaseImp
@@ -54,6 +56,8 @@
   - PowerCellBlasterMilitary
   - MagazineLightRifleUranium #qb, adding other .30 mags
   - MagazineLightRifleIncendiary #qb, adding other .30 mags
+  - CartridgeSpecialHoly # qb - .38 Special revolver, Holy ammo
+  - CartridgeSpecialMindbreaker # qb .38 special revolver, mindbreaker ammo
 
 - type: latheRecipePack
   id: SecurityWeaponsImp
