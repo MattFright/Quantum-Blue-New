@@ -77,10 +77,8 @@
           prob: 0.001
         - id: WeaponRevolverInspector
           prob: 0.001
-          # DeltaV - .38 special revolver - Adds the .38 Special Revolver 'Lucky 37' to the salvage potential loot
-        - id: WeaponRevolverLucky
+        - id: WeaponRevolverLucky # qb - add lucky revolver to salvage loot
           prob: 0.001
-          # End of modified code
         - id: ClothingShoesBootsMagBlinding
           prob: 0.001
           #  - Skub

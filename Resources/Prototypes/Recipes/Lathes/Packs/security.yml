@@ -55,6 +55,8 @@
   - MagazineRifleEmpty
   - SpeedLoaderMagnum
   - SpeedLoaderMagnumEmpty
+  - MagazineMagnum # qb
+  - MagazineMagnumEmpty # qb
 
 - type: latheRecipePack
   id: SecurityWeaponsStatic
@@ -132,12 +134,8 @@
   - SpeedLoaderMagnumIncendiary
   - SpeedLoaderMagnumUranium
   # qb changes begin
-  - MagazineBoxSpecialIncendiary
-  - MagazineBoxSpecialUranium
-  - MagazineBoxSpecialMindbreaker
-  - SpeedLoaderSpecialUranium
-  - CartridgeSpecialHoly
-  - CartridgeSpecialMindbreaker
+  - MagazineBoxMagnumMindbreaker
+  - SpeedLoaderMagnumHoly
   # qb changes end
 
 - type: latheRecipePack

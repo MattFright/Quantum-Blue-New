@@ -1,0 +1,40 @@
+# .45 special ammo
+- type: entity
+  id: SpeedLoaderMagnumMindbreaker
+  name: "speed loader (.45 mindbreaker)"
+  parent: BaseSpeedLoaderMagnum
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumMindbreaker
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Special/special_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: mindbreaker-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: mindbreaker
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: SpeedLoaderMagnumHoly
+  name: "speed loader (.45 holy)"
+  parent: BaseSpeedLoaderMagnum
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumHoly
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Special/special_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: holy-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: holy
+    steps: 7
+    zeroVisible: false
+  - type: Appearance

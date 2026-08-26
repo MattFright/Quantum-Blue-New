@@ -1,18 +1,9 @@
 # PUT YOUR TAGS IN ALPHABETICAL ORDER
 - type: Tag
-  id: CartridgeSpecial
-
-- type: Tag
   id: DockShipyard
 
 - type: Tag
   id: Katana
-
-- type: Tag
-  id: MagazinePistolSpecial # For psibreaker
-
-- type: Tag
-  id: SpeedLoaderSpecial
 
 - type: Tag
   id: Wakizashi

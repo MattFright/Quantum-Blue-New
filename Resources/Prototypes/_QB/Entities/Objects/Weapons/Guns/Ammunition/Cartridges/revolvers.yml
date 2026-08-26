@@ -1,0 +1,38 @@
+- type: entity
+  id: CartridgeMagnumHoly
+  name: cartridge (.45 holy)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumHoly
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#fff600"
+
+- type: entity
+  id: CartridgeMagnumMindbreaker
+  name: cartridge (.45 mindbreaker)
+  parent: BaseCartridgeMagnum
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumMindbreaker
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#950ea9"
+  - type: ChemicalAmmo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        reagents:
+        - ReagentId: MindbreakerToxin
+          Quantity: 10
+  - type: SolutionTransfer
+    maxTransferAmount: 10

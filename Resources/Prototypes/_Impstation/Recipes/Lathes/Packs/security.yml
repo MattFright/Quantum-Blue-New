@@ -26,10 +26,9 @@
   - PowerCellBlaster
   - PowerCellStarflare
   # qb additions start
-  - MagazineBoxSpecial
-  - SpeedLoaderSpecial
-  - SpeedLoaderSpecialEmpty
-  - MagazineBoxSpecialPractice
+  - MagazineMagnumEmpty
+  - MagazineMagnum
+  - MagazineMagnumStun
   # qb additions end
 
 - type: latheRecipePack
@@ -61,14 +60,8 @@
   # qb changes begin
   - MagazineLightRifleUranium #qb, adding other .30 mags
   - MagazineLightRifleIncendiary #qb, adding other .30 mags
-  - CartridgeSpecialHoly
-  - CartridgeSpecialMindbreaker
-  - CartridgeSpecialIncendiary
-  - CartridgeSpecialUranium
-  - CartridgeSpecialMindbreaker
-  - MagazineBoxSpecialIncendiary
-  - MagazineBoxSpecialUranium
-  - MagazineBoxSpecialMindbreaker
+  - SpeedLoaderMagnumHoly
+  - MagazineBoxMagnumMindbreaker
   # qb changes end
 
 - type: latheRecipePack

@@ -1,0 +1,16 @@
+# .45
+- type: entity
+  parent: BaseMagazineBoxMagnum
+  id: MagazineBoxMagnumMindbreaker
+  name: ammunition box (.45 mindbreaker)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumMindbreaker
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/Boxes/special.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mindbreaker

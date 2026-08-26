@@ -1,0 +1,31 @@
+# .45 pistol magazines
+
+- type: entity
+  id: MagazineMagnumStun
+  name: pistol magazine (.45 Magnum stun)
+  parent: BaseMagazineMagnum
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumStun
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_special_mag.rsi
+    layers:
+    - state: rubber
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineMagnumMindbreaker
+  name: pistol magazine (.45 Magnum mindbreaker)
+  parent: BaseMagazineMagnum
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnumMindbreaker
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_special_mag.rsi
+    layers:
+    - state: mindbreaker
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

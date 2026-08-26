@@ -1,0 +1,37 @@
+# Special .45 bullets
+- type: entity
+  id: BulletMagnumHoly
+  name: bullet (.45 holy)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Holy: 6
+        Piercing: 25
+
+- type: entity
+  id: BulletMagnumMindbreaker
+  name: bullet (.45 mindbreaker)
+  parent: BaseBulletPractice
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 10
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 10
+    blockSlots: NONE #shouldn't be blocked by a mask
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo

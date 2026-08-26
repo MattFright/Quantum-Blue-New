@@ -1,0 +1,14 @@
+# Tier 2
+
+- type: technology
+  id: ExoticAmmunition
+  name: research-technology-exotic-ammunition
+  icon:
+    sprite: _DV/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Special/special_speed_loader.rsi
+    state: holy-6
+  discipline: Arsenal
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - SpeedLoaderMagnumHoly
+  - MagazineBoxMagnumMindbreaker

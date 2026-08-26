@@ -1,0 +1,142 @@
+- type: entity
+  name: psi-breaker
+  parent: BaseWeaponPistol
+  id: LauncherSyringePsiBreaker
+  description: A small, flashy pistol with a marble style grip. Provides no tactical advantage. Shoots mini-syringes.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi
+    layers:
+    - state: base
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+    clumsyProof: false
+  - type: GunDamage
+    damage:
+      types:
+        Piercing: 10
+    damageSpecific:
+      DamageVariable:
+        types:
+          Piercing: 0
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineMagnumSyringe
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSyringe
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeSyringe
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeMagnum
+            - CartridgeSyringe
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  id: MagazineMagnumSyringe
+  name: pistol magazine (syringe)
+  parent: BaseMagazineMagnum
+  description: A 5-round magazine specially shaped to hold syringe bullets.
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#820a16"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#820a16"
+  - type: BallisticAmmoProvider
+    proto: CartridgeSyringe
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeSyringe
+    capacity: 5
+  - type: Tag
+    tags:
+      - MagazineSyringe
+
+- type: entity
+  id: CartridgeSyringe
+  name: syringe ammo
+  parent: [BaseCartridge, Syringe]
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    layers:
+      - state: minisyringe1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+      - state: syringeproj
+  - type: CartridgeAmmo
+    proto: BulletSyringe
+    deleteOnSpawn: true
+  - type: Injector
+    solutionName: ammo
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: minisyringe
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: ChemicalAmmo
+  - type: SolutionTransfer
+    maxTransferAmount: 5
+  - type: Tag
+    tags:
+      - CartridgeSyringe
+
+- type: entity
+  id: BulletSyringe
+  name: bullet (syringe)
+  parent: MiniSyringe
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 5
+  - type: RefillableSolution
+    solution: ammo
+  - type: DrainableSolution
+    solution: ammo
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 5
+    blockSlots: NONE #shouldn't be blocked by a mask
+    solution: ammo
+  - type: InjectableSolution
+    solution: ammo

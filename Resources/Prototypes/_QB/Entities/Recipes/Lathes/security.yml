@@ -1,0 +1,35 @@
+# .45
+- type: latheRecipe
+  id: MagazineBoxMagnumMindbreaker
+  result: MagazineBoxMagnumMindbreaker
+  category: Ammo
+  completetime: 5
+  materials:
+    Plastic: 1250
+    Steel: 75
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: SpeedLoaderMagnumHoly
+  result: SpeedLoaderMagnumHoly
+  materials:
+    Steel: 120
+    Silver: 30
+
+- type: latheRecipe
+  parent: SpeedLoaderMagnumEmpty
+  id: MagazineMagnumEmpty
+  result: MagazineMagnumEmpty
+
+- type: latheRecipe
+  parent: SpeedLoaderMagnum
+  id: MagazineMagnum
+  result: MagazineMagnum
+
+- type: latheRecipe
+  parent: SpeedLoaderMagnumStun
+  id: MagazineMagnumStun
+  result: MagazineMagnumStun
+  materials:
+    Steel: 175
+    Plastic: 45
