@@ -4,7 +4,7 @@
   id: uplinkPsiBreaker
   name: uplink-psibreaker-name
   description: uplink-psibreaker-desc
-  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi, state: closed }
+  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi, state: icon }
   productEntity: WeaponPistolPsiBreaker
   discountCategory: rareDiscounts
   discountDownTo:
@@ -24,7 +24,7 @@
   id: uplinkTrinity
   name: uplink-trinity-name
   description: uplink-trinity-desc
-  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Pistols/faith.rsi, state: closed }
+  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Revolvers/faith.rsi, state: icon }
   productEntity: WeaponRevolverTrinity
   discountCategory: rareDiscounts
   discountDownTo:

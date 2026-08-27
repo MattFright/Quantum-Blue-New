@@ -4,7 +4,7 @@
   id: uplinkAmmoMindbreaker
   name: uplink-mindbreaker-ammo-name
   description: uplink-mindbreaker-ammo-desc
-  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi, state: closed }
+  icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi, state: base } # TODO: icon. sprite uses layers so can't show mindbreaker box
   productEntity: MagazineBoxMindbreaker
   discountCategory: rareDiscounts
   discountDownTo:

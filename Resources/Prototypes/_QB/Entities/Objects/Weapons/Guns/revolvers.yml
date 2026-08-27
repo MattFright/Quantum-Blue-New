@@ -128,6 +128,10 @@
     sprite: _DV/Objects/Weapons/Guns/Revolvers/faith.rsi
   - type: Clothing
     sprite: _DV/Objects/Weapons/Guns/Revolvers/faith.rsi
+  - type: Item
+    size: Small # 1x2
+    shape:
+    - 0,0,1,0
   - type: Gun
     minAngle: 5
     maxAngle: 30
