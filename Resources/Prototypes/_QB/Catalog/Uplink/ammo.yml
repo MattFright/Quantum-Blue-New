@@ -1,0 +1,15 @@
+# .45
+
+- type: listing
+  id: uplinkAmmoMindbreaker
+  name: uplink-mindbreaker-ammo-name
+  description: uplink-mindbreaker-ammo-desc
+  icon: { sprite: /Textures/_DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi, state: closed }
+  productEntity: MagazineBoxMindbreaker
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmo

@@ -1,7 +1,7 @@
 - type: entity
   name: psi-breaker
   parent: BaseWeaponPistol
-  id: LauncherSyringePsiBreaker
+  id: WeaponPistolPsiBreaker
   description: A small, flashy pistol with a marble style grip. Provides no tactical advantage. Shoots exclusive refillable syringe bullets.
   components:
   - type: Sprite
