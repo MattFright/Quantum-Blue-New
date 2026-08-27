@@ -39,7 +39,7 @@
             - MagazineSyringe
       gun_chamber:
         name: Chamber
-        startingItem: MiniSyringe
+        startingItem: CartridgeSyringe
         priority: 1
         whitelist:
           tags:
@@ -76,7 +76,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - SyringeGunAmmo
+        - CartridgeSyringe
     capacity: 5
   - type: Tag
     tags:
@@ -85,17 +85,19 @@
 - type: entity
   id: CartridgeSyringe # has to be different from regular mini syringe, sadly
   name: syringe ammo
-  parent: [BaseBullet, MiniSyringe]
+  parent: MiniSyringe
   components:
-  - type: Sprite
-    sprite: Objects/Specific/Chemistry/syringe.rsi
-    layers:
-      - state: minisyringe1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
-      - state: syringeproj
+  - type: Reflective
+  - type: Clickable
+  - type: Physics
+    bodyType: Dynamic
+    linearDamping: 0
+    angularDamping: 0
   - type: Injector
     solutionName: ammo
+    activeModeProtoId: DropperDrawMode
+    allowedModes:
+    - DropperDrawMode
   - type: SolutionContainerManager
     solutions:
       ammo:

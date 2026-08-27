@@ -66,7 +66,7 @@
     selectedMode: SemiAuto
     minAngle: 5
     maxAngle: 30
-    angleIncrease: 20
+    angleIncrease: 10
     angleDecay: 5
     fireRate: 1.75 # slightly higher speed than base
     availableModes:

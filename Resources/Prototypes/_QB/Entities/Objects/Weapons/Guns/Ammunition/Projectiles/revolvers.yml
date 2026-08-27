@@ -9,7 +9,7 @@
     damage:
       types:
         Holy: 6
-        Piercing: 25
+        Piercing: 10 #same as normal imp bullet
 
 - type: entity
   id: BulletMagnumMindbreaker

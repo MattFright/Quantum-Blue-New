@@ -8,7 +8,7 @@
 
 # Dynamic
 - type: latheRecipePack
-  id: SecurityAmmoDynamicQB
+  id: SecurityAmmoQB
   recipes:
   - MagazineLightRifleUranium
   - MagazineLightRifleIncendiary
