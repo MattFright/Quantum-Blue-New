@@ -1,13 +1,21 @@
-# .45
+# .45 ammo box
 - type: latheRecipe
+  parent: BaseAmmoRecipe
   id: MagazineBoxMagnumMindbreaker
   result: MagazineBoxMagnumMindbreaker
-  category: Ammo
-  completetime: 5
   materials:
     Plastic: 1250
     Steel: 75
 
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazineBoxMagnumHoly
+  result: MagazineBoxMagnumHoly
+  materials:
+    Steel: 260
+    Silver: 60
+
+# .45 speedloader
 - type: latheRecipe
   parent: BaseAmmoRecipe
   id: SpeedLoaderMagnumHoly
@@ -16,6 +24,7 @@
     Steel: 120
     Silver: 30
 
+# .45 magazines
 - type: latheRecipe
   parent: SpeedLoaderMagnumEmpty
   id: MagazineMagnumEmpty
@@ -30,6 +39,10 @@
   parent: SpeedLoaderMagnumStun
   id: MagazineMagnumStun
   result: MagazineMagnumStun
-  materials:
-    Steel: 175
-    Plastic: 45
+
+# special
+- type: latheRecipe
+  parent: MiniSyringe
+  id: CartridgeSyringe
+  result: CartridgeSyringe
+    

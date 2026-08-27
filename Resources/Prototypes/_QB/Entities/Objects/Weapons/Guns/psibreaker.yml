@@ -2,7 +2,7 @@
   name: psi-breaker
   parent: BaseWeaponPistol
   id: LauncherSyringePsiBreaker
-  description: A small, flashy pistol with a marble style grip. Provides no tactical advantage. Shoots mini-syringes.
+  description: A small, flashy pistol with a marble style grip. Provides no tactical advantage. Shoots exclusive refillable syringe bullets.
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi
@@ -39,11 +39,10 @@
             - MagazineSyringe
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeSyringe
+        startingItem: MiniSyringe
         priority: 1
         whitelist:
           tags:
-            - CartridgeMagnum
             - CartridgeSyringe
   - type: ContainerContainer
     containers:
@@ -56,7 +55,7 @@
   parent: BaseMagazineMagnum
   description: A 5-round magazine specially shaped to hold syringe bullets.
   components:
-  - type: Sprite
+  - type: Sprite #TODO custom sprite
     layers:
     - state: red
       map: ["enum.GunVisualLayers.Base"]
@@ -67,26 +66,26 @@
       left:
       - state: inhand-left-mag
       - state: inhand-left-stripe
-        color: "#820a16"
+        color: "#222222"
       right:
       - state: inhand-right-mag
       - state: inhand-right-stripe
-        color: "#820a16"
+        color: "#222222"
   - type: BallisticAmmoProvider
     proto: CartridgeSyringe
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeSyringe
+        - SyringeGunAmmo
     capacity: 5
   - type: Tag
     tags:
       - MagazineSyringe
 
 - type: entity
-  id: CartridgeSyringe
+  id: CartridgeSyringe # has to be different from regular mini syringe, sadly
   name: syringe ammo
-  parent: [BaseCartridge, Syringe]
+  parent: [BaseBullet, MiniSyringe]
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/syringe.rsi
@@ -95,9 +94,6 @@
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
       - state: syringeproj
-  - type: CartridgeAmmo
-    proto: BulletSyringe
-    deleteOnSpawn: true
   - type: Injector
     solutionName: ammo
   - type: SolutionContainerManager
@@ -112,24 +108,10 @@
   - type: ChemicalAmmo
   - type: SolutionTransfer
     maxTransferAmount: 5
-  - type: Tag
-    tags:
-      - CartridgeSyringe
-
-- type: entity
-  id: BulletSyringe
-  name: bullet (syringe)
-  parent: MiniSyringe
-  noSpawn: true
-  components:
   - type: Projectile
     damage:
       types:
         Blunt: 1
-  - type: SolutionContainerManager
-    solutions:
-      ammo:
-        maxVol: 5
   - type: RefillableSolution
     solution: ammo
   - type: DrainableSolution
@@ -140,3 +122,6 @@
     solution: ammo
   - type: InjectableSolution
     solution: ammo
+  - type: Tag
+    tags:
+      - CartridgeSyringe

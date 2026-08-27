@@ -25,11 +25,6 @@
   - MagazinePistolP2
   - PowerCellBlaster
   - PowerCellStarflare
-  # qb additions start
-  - MagazineMagnumEmpty
-  - MagazineMagnum
-  - MagazineMagnumStun
-  # qb additions end
 
 - type: latheRecipePack
   id: SteelBriefcaseImp
@@ -57,12 +52,6 @@
   - MagazinePistolP2Incendiary
   - MagazinePistolP2Uranium
   - PowerCellBlasterMilitary
-  # qb changes begin
-  - MagazineLightRifleUranium #qb, adding other .30 mags
-  - MagazineLightRifleIncendiary #qb, adding other .30 mags
-  - SpeedLoaderMagnumHoly
-  - MagazineBoxMagnumMindbreaker
-  # qb changes end
 
 - type: latheRecipePack
   id: SecurityWeaponsImp

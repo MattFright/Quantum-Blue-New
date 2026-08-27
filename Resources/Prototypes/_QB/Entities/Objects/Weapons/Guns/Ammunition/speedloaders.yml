@@ -3,6 +3,7 @@
   id: SpeedLoaderMagnumMindbreaker
   name: "speed loader (.45 mindbreaker)"
   parent: BaseSpeedLoaderMagnum
+  description: When someone needs a chill pill. Or six.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumMindbreaker
@@ -23,6 +24,7 @@
   id: SpeedLoaderMagnumHoly
   name: "speed loader (.45 holy)"
   parent: BaseSpeedLoaderMagnum
+  description: You can't expect Space God to do all the work.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumHoly
