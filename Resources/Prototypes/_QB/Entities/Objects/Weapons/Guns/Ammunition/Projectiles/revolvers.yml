@@ -3,7 +3,7 @@
   id: BulletMagnumHoly
   name: bullet (.45 holy)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -15,7 +15,7 @@
   id: BulletMagnumMindbreaker
   name: bullet (.45 mindbreaker)
   parent: BaseBulletPractice
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -31,7 +31,7 @@
     solution: ammo
   - type: SolutionInjectOnProjectileHit
     transferAmount: 10
-    blockSlots: NONE #shouldn't be blocked by a mask
+    blockSlots: NONE
     solution: ammo
   - type: InjectableSolution
     solution: ammo

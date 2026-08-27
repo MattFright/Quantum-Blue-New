@@ -5,7 +5,7 @@
   name: uplink-mindbreaker-ammo-name
   description: uplink-mindbreaker-ammo-desc
   icon: { sprite: /Textures/_Impstation/Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi, state: base } # TODO: icon. sprite uses layers so can't show mindbreaker box
-  productEntity: MagazineBoxMindbreaker
+  productEntity: MagazineBoxMagnumMindbreaker
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 2
