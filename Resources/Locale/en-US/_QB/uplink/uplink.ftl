@@ -4,6 +4,3 @@ uplink-psibreaker-desc = A sleek pistol with an engraved marble grip. Capable of
 
 uplink-trinity-name = trinity
 uplink-trinity-desc = There are some deeds that a humble servant's hands cannot achieve alone. Like ending someone's life at range in a 3 round burst. Comes pre-loaded with .45 holy ammo.
-
-uplink-mindbreaker-ammo-name = Ammunition Box (.45 mindbreaker)
-uplink-mindbreaker-ammo-desc = A box of .45 bullets laced with mindbreaker toxin, also known as LSD. Forces someone to go on a trip, but physically leaves them mostly unharmed.

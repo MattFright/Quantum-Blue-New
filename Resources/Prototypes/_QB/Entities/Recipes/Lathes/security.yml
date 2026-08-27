@@ -1,14 +1,6 @@
 # .45 ammo box
 - type: latheRecipe
   parent: BaseAmmoRecipe
-  id: MagazineBoxMagnumMindbreaker
-  result: MagazineBoxMagnumMindbreaker
-  materials:
-    Plastic: 1250
-    Steel: 75
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
   id: MagazineBoxMagnumHoly
   result: MagazineBoxMagnumHoly
   materials:

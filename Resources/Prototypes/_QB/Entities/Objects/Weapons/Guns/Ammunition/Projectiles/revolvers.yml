@@ -10,28 +10,3 @@
       types:
         Holy: 6
         Piercing: 10 #same as normal imp bullet
-
-- type: entity
-  id: BulletMagnumMindbreaker
-  name: bullet (.45 mindbreaker)
-  parent: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 1
-  - type: SolutionContainerManager
-    solutions:
-      ammo:
-        maxVol: 10
-  - type: RefillableSolution
-    solution: ammo
-  - type: DrainableSolution
-    solution: ammo
-  - type: SolutionInjectOnProjectileHit
-    transferAmount: 10
-    blockSlots: NONE
-    solution: ammo
-  - type: InjectableSolution
-    solution: ammo

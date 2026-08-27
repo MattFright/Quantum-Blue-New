@@ -1,25 +1,4 @@
-# .45 special ammo
-- type: entity
-  id: SpeedLoaderMagnumMindbreaker
-  name: "speed loader (.45 mindbreaker)"
-  parent: BaseSpeedLoaderMagnum
-  description: When someone needs a chill pill. Or six.
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeMagnumMindbreaker
-  - type: Sprite
-    sprite: _DV/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Special/special_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: mindbreaker-6
-        map: [ "enum.GunVisualLayers.Mag" ]
-  - type: MagazineVisuals
-    magState: mindbreaker
-    steps: 7
-    zeroVisible: false
-  - type: Appearance
-
+# .45 ammo
 - type: entity
   id: SpeedLoaderMagnumHoly
   name: "speed loader (.45 holy)"

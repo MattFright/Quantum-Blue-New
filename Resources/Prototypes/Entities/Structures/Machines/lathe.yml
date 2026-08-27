@@ -226,6 +226,7 @@
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
+    - SecurityAmmoQB #qb
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
