@@ -1,6 +1,17 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Add
+        message: A crate of 3 garden gnomes can now be ordered at cargo for 6000 spesos. Comes with a complimentary hat.
+      - type: Add
+        message: One (faux) gnome hat has appeared in the Autodrobe.
+      - type: Tweak
+        message: Nuke disks both fake and real can no longer be hidden in secret stashes
+    id: 158
+    time: '2026-08-29T17:59:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/184
+  - author: rebe83
+    changes:
       - type: Tweak
         message: Chef cube monkeys and kobolds are no longer immune to romerol. GULP!
     id: 157
