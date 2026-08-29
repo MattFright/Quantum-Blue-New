@@ -1,6 +1,13 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Tweak
+        message: Mosquitoes now die in one hit and make you itchy. They can also be used like tiny syringes.
+    id: 159
+    time: '2026-08-29T18:00:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/192
+  - author: rebe83
+    changes:
       - type: Add
         message: A crate of 3 garden gnomes can now be ordered at cargo for 6000 spesos. Comes with a complimentary hat.
       - type: Add
