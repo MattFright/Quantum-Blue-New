@@ -11,6 +11,10 @@
             "name": "icon"
         },
         {
+            "name": "equipped-INNERCLOTHING",
+            "directions": 4
+        },
+        {
             "name": "inhand-left",
             "directions": 4
         },
@@ -19,7 +23,7 @@
             "directions": 4
         },
         {
-            "name": "equipped-INNERCLOTHING",
+            "name": "folded-equipped-INNERCLOTHING",
             "directions": 4
         }
     ]

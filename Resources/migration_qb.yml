@@ -62,3 +62,16 @@ MascotCindySuit: null
 MascotCindyHead: null
 PaperSyndicateMascotCindyManual: null
 ClothingBackpackDuffelSyndicateFilledMascotCindy: null
+
+# 08/20/2026 - Replacing all imp/wizden/delta-v sec clothes for organization
+# warden
+ClothingUniformJumpsuitWarden: ClothingUniformJumpsuitWardenQB
+ClothingUniformJumpsuitWardenTurtle: ClothingUniformJumpsuitWardenTurtleneckQB
+ClothingUniformJumpsuitChiefJusticeFormal: ClothingUniformJumpsuitWardenAttireQB
+# hos
+ClothingUniformJumpsuitHoS: ClothingUniformJumpsuitHosQB
+ClothingUniformJumpsuitHoSBlue: ClothingUniformJumpsuitHosBlueQB
+ClothingUniformJumpsuitHoSGrey: ClothingUniformJumpsuitHosGreyQB
+ClothingUniformJumpsuitHoSAlt: ClothingUniformJumpsuitHosTurtleneckQB
+ClothingUniformJumpsuitHosFormal: ClothingUniformJumpsuitHosFormalSuitQB
+ClothingUniformJumpsuitHoSParadeMale: ClothingUniformJumpsuitHosParadeSuitQB
