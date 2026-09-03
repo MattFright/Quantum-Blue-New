@@ -1,4 +1,11 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Elkridge: Fixed Elkridge''s solars'
+    id: 164
+    time: '2026-09-03T10:54:02.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/215
   - author: rebe83
     changes:
       - type: Remove
