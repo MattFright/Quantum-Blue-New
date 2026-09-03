@@ -1,6 +1,17 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Tweak
+        message: >-
+          Pebble: Solars are mostly restored now. This means that the roundstart situation for power should be a lot
+          less stressful now
+      - type: Tweak
+        message: 'Pebble: Various small visual tweaks'
+    id: 161
+    time: '2026-09-03T01:52:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/213
+  - author: MattFright
+    changes:
       - type: Add
         message: 'Dash: Added a gas analyzer to the cryogenics room'
       - type: Add
