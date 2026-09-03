@@ -1,6 +1,13 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Add
+        message: Moths have new speech sounds now! Ported from Cosmatic Drift
+    id: 162
+    time: '2026-09-03T02:19:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/212
+  - author: MattFright
+    changes:
       - type: Tweak
         message: >-
           Pebble: Solars are mostly restored now. This means that the roundstart situation for power should be a lot
