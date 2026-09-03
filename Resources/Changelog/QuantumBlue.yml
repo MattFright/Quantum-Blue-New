@@ -1,4 +1,25 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Add
+        message: 'Dash: Added a gas analyzer to the cryogenics room'
+      - type: Add
+        message: 'Dash: Added a portable scrubber to atmos proper'
+      - type: Tweak
+        message: 'Dash: Moved the maints meatspike behind the kitchen'
+      - type: Tweak
+        message: 'Dash: Gave the librarian''s room access to maints'
+      - type: Fix
+        message: 'Dash: Fixed artifact analyzers not being connected to their pads'
+      - type: Fix
+        message: 'Dash: Fixed the salvage recycler conveyor'
+      - type: Fix
+        message: 'Dash: Fixed the issue that caused Engineering to be the first department to lose power in an outage'
+      - type: Fix
+        message: 'Dash: Hopefully fixed that one z-fighting firelock in medbay'
+    id: 160
+    time: '2026-09-03T01:52:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/210
   - author: rebe83
     changes:
       - type: Tweak
