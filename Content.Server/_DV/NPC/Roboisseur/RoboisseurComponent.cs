@@ -93,7 +93,7 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodBreadMeat",
             "FoodBreadCreamcheese",
             "FoodBreadTofu",
-            "FoodCheeseCurds",
+            //"FoodCheeseCurds", QB
             "FoodBurgerSuper",
             "FoodNoodlesCopy",
             "FoodSoupMonkey",
@@ -110,7 +110,7 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodBurgerBaseball",
             "FoodMealNachosCheesy",
             "FoodSoupChiliHot",
-            "FoodMothCapreseSalad",
+            //"FoodMothCapreseSalad", QB
         };
 
         [DataField("tier3Protos")]
@@ -126,14 +126,14 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodMealCubancarp",
             "FoodBakedCannabisBrownieBatch",
             "FoodBreadFrenchToast",
-            "FoodMothSeedSoup",
+            //"FoodMothSeedSoup", QB
             "FoodPieFrosty",
             "FoodBreadBanana",
             "FoodBreadCotton",
             "FoodBurgerCarp",
             "FoodBurgerMcguffin",
             "FoodBurgerMcrib",
-            "FoodMothFleetSalad",
+            //"FoodMothFleetSalad", QB
             "FoodCakeSuppermatter",
             "FoodBurgerFive",
             "FoodPieBaklava",
@@ -145,12 +145,12 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodSoupWingFangChu",
             "FoodTacoChickenSupreme",
             "FoodTacoBeefSupreme",
-            "FoodMealGrilledCheese",
-            "FoodMothCheesecakeBalls",
+            //"FoodMealGrilledCheese", QB
+            //"FoodMothCheesecakeBalls", QB
             "FoodSoupChiliCold",
-            "FoodMothKachumbariSalad",
-            "FoodMothChiliCabbageWrap",
-            "FoodMothHeartburnSoup",
+            //"FoodMothKachumbariSalad", QB
+            //"FoodMothChiliCabbageWrap", QB
+           //"FoodMothHeartburnSoup", QB
             "FoodSoupBisque",
             "FoodCakeSlime",
             "FoodBurgerCrazy",
@@ -188,11 +188,11 @@ namespace Content.Server.Roboisseur.Roboisseur
         [DataField("blacklistedProtos")]
         public IReadOnlyList<String> BlacklistedProtos = new[]
         {
-            "FoodMothPesto",
+            //"FoodMothPesto", QB
             "FoodBurgerSpell",
-            "FoodMothSqueakingFry",
+            //"FoodMothSqueakingFry", QB
             "FoodBurgerMime",
-            "FoodPizzaCorncob",
+            //"FoodPizzaCorncob", QB
             "FoodBurgerGhost",
             "FoodCakeClown",
             "FoodCakeSpaceman",
@@ -203,35 +203,35 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodBurgerHuman",
             "FoodNoodlesBoiled",
             "FoodPizzaDonkpocket",
-            "FoodMothOatStew",
+            //"FoodMothOatStew", QB
             "FoodDonkpocketBerryWarm",
-            "LockboxDecloner",
+            //"LockboxDecloner", QB
             "FoodBreadButteredToast",
             "FoodMothCottonSoup",
             "LeavesTobaccoDried",
             "FoodSoupEyeball",
             "FoodBurgerCorgi",
             "FoodBreadPlain",
-            "FoodMeatKebab",
+            "FoodKebabSkewer", // QB foodmeatkebab migrate to foodkebabskewer
             "FoodBreadBun",
             "FoodBurgerCat",
             "FoodSoupTomatoBlood",
-            "FoodMothSaladBase",
+            //"FoodMothSaladBase", QB
             "FoodPieXeno",
             "FoodPiePumpkinSlice",
             "FoodDonkpocketTeriyakiWarm",
-            "FoodMothBakedCheese",
-            "FoodMothTomatoSauce",
+            //"FoodMothBakedCheese", QB
+            //"FoodMothTomatoSauce", QB
             "FoodMothPizzaCotton",
             "AloeCream",
             "FoodSnackPopcorn",
             "FoodBurgerSoy",
-            "FoodMothToastedSeeds",
-            "FoodMothCornmealPorridge",
-            "FoodMothBakedCorn",
+            //"FoodMothToastedSeeds", QB
+            //"FoodMothCornmealPorridge", QB
+            //"FoodMothBakedCorn", QB
             "FoodBreadMoldySlice",
             "FoodRiceBoiled",
-            "FoodMothEyeballSoup",
+            //"FoodMothEyeballSoup", QB
             "FoodBurgerAppendix",
             "FoodBurgerRat",
             "FoodBurgerRobot",
@@ -303,7 +303,7 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodBurgerCrab",
             "FoodBurgerXeno",
             "FoodMealMemoryleek",
-            "FoodMothMacBalls",
+            //"FoodMothMacBalls", QB
             "FoodJellyAmanita",
             "FoodSoupMiso",
             "FoodSoupTomatoBlue",
@@ -313,7 +313,7 @@ namespace Content.Server.Roboisseur.Roboisseur
             "FoodCakeBrain",
             "FoodBurgerBrain",
             "FoodMeatAnomaly",
-            "FoodMothBeanStew",
+            //"FoodMothBeanStew", QB
             "FoodPizzaWorldpeas",
         };
     }

@@ -7,7 +7,7 @@
   - type: Sprite
     noRot: true
     drawdepth: Mobs
-    sprite: DeltaV/Structures/Machines/roboisseur.rsi
+    sprite: _DV/Structures/Machines/roboisseur.rsi
     layers:
     - state: roboisseur-1
   - type: Destructible
