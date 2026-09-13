@@ -1,3 +1,4 @@
+using Content.Server.Administration.Logs;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Server.Chat.Systems;
@@ -7,6 +8,9 @@ using Content.Shared.Random.Helpers;
 using Content.Shared.Kitchen;
 using Robust.Server.GameObjects;
 using Content.Server.Materials;
+using Content.Shared.Database;
+using Robust.Shared.Player;
+using Content.Shared.Chat;
 
 namespace Content.Server.Roboisseur.Roboisseur
 {
@@ -16,8 +20,7 @@ namespace Content.Server.Roboisseur.Roboisseur
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly ChatSystem _chat = default!;
         [Dependency] private readonly MaterialStorageSystem _material = default!;
-        [Dependency] private readonly AppearanceSystem _appearance = default!;
-
+        [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
         public override void Initialize()
         {
@@ -55,7 +58,7 @@ namespace Content.Server.Roboisseur.Roboisseur
                     }
                     else if (CheckTier(roboisseur.DesiredPrototype.ID, roboisseur) > 2)
                         message = Loc.GetString(_random.Pick(roboisseur.DemandMessagesTier2), ("item", roboisseur.DesiredPrototype.Name));
-                    _chat.TrySendInGameICMessage(roboisseur.Owner, message, InGameICChatType.Speak, false);
+                    _chat.TrySendInGameICMessage(roboisseur.Owner, message, InGameICChatType.Speak, true);
                 }
 
                 if (roboisseur.Accumulator >= roboisseur.ResetTime.TotalSeconds)
@@ -72,11 +75,11 @@ namespace Content.Server.Roboisseur.Roboisseur
             int rewardToDispense = r.Next(750, 1250) + 550 * tier;
 
             _material.SpawnMultipleFromMaterial(rewardToDispense, "Credit", Transform(uid).Coordinates);
-            if(tier > 1)
+            if (tier > 1)
             {
                 while (tier != 0)
                 {
-                    EntityManager.SpawnEntity(_random.Pick(component.RobossuierRewards), Transform(uid).Coordinates);
+                    Spawn(_random.Pick(component.RobossuierRewards), Transform(uid).Coordinates);
                     tier--;
                 }
             }
@@ -92,7 +95,7 @@ namespace Content.Server.Roboisseur.Roboisseur
             if (CheckTier(component.DesiredPrototype.ID, component) > 1)
                 message = Loc.GetString(_random.Pick(component.DemandMessagesTier2), ("item", component.DesiredPrototype.Name));
 
-            _chat.TrySendInGameICMessage(component.Owner, message, InGameICChatType.Speak, false);
+            _chat.TrySendInGameICMessage(component.Owner, message, InGameICChatType.Speak, true);
         }
 
         private void OnInteractUsing(EntityUid uid, RoboisseurComponent component, InteractUsingEvent args)
@@ -119,6 +122,10 @@ namespace Content.Server.Roboisseur.Roboisseur
             if (tier > 1)
                 message = Loc.GetString(_random.Pick(component.RewardMessagesTier2));
             _chat.TrySendInGameICMessage(uid, message, InGameICChatType.Speak, true);
+
+            _adminLog.Add(LogType.InteractHand,
+                LogImpact.Medium,
+                $"{ToPrettyString(args.User):player} sold {ToPrettyString(args.Used)} to {ToPrettyString(uid)}.");
 
             RewardServicer(args.User, component, tier);
 
