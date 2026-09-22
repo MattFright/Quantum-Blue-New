@@ -1,0 +1,98 @@
+- type: entity
+  name: space honey comb
+  id: SpaceHoneyComb
+  parent: BaseStructure
+  description: Contains the space bees' most prized possession.
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _QB/Structures/Specific/spacehoneycomb.rsi
+    noRot: true
+    layers:
+    - state: honeycomb
+    - state: fill-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: honeycomb_unshaded
+      shader: unshaded
+    drawdepth: Objects
+  - type: InteractionOutline
+  - type: SolutionContainerManager
+    solutions:
+      honeycomb:
+        maxVol: 200
+  - type: DrainableSolution
+    solution: honeycomb
+  - type: RefillableSolution
+    solution: honeycomb
+  - type: DrawableSolution
+    solution: honeycomb
+  - type: ExaminableSolution
+    solution: honeycomb
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: ReactiveContainer
+    solution: honeycomb
+    container: item_slot
+  - type: Edible
+    edible: Drink
+    solution: honeycomb
+    destroyOnEmpty: false
+    utensil: Spoon
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill-
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      item_slot: !type:ContainerSlot {}
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 70
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+
+- type: entity
+  id: SpaceHoneyCombHalfFilled
+  parent: SpaceHoneyComb
+  suffix: HalfFull
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      honeycomb:
+        reagents:
+        - ReagentId: SpaceHoney
+          Quantity: 100
+
+- type: entity
+  id: SpaceHoneyCombFull
+  parent: SpaceHoneyComb
+  suffix: Full
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      honeycomb:
+        reagents:
+        - ReagentId: SpaceHoney
+          Quantity: 200
+  

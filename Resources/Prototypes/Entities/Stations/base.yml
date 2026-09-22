@@ -115,6 +115,7 @@
           - /Maps/Salvage/small-syndicate.yml #imp
           - /Maps/Salvage/small-tesla.yml #imp
           - /Maps/Salvage/tick-colony.yml #imp
+          - /Maps/_QB/Salvage/BeeHotel.yml # QB
         rareRuin: !type:GridSpawnGroup # imp category
           hide: true
           nameGrid: true

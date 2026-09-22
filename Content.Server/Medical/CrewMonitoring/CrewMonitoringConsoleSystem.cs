@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Server.DeviceNetwork;
 using Content.Server.DeviceNetwork.Systems;
 using Content.Shared.PowerCell;
+using Content.Shared.PowerCell.Components;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.DeviceNetwork.Events;
 using Content.Server.Power.EntitySystems; // DeltaV
@@ -57,14 +58,6 @@ public sealed class CrewMonitoringConsoleSystem : EntitySystem
         if (!component.AlertsEnabled)
             return;
 
-        // station power (for the machine version)
-        if (!this.IsPowered(uid, EntityManager))
-            return;
-
-        // cell power (for the handheld)
-        if (!_cell.HasActivatableCharge(uid))
-            return;
-
         foreach (var (sensorId, status) in sensorStatus)
         {
             // DamagePercentage above 1f is considered critical. It is null when sensor vitals are off.
@@ -80,16 +73,11 @@ public sealed class CrewMonitoringConsoleSystem : EntitySystem
 
             if (!status.IsAlive || isCritical)
             {
-                if (_timing.CurTime >= component.NextAlert)
-                {
-                    var audioParams = AudioParams.Default.WithVolume(-2f).WithMaxDistance(4f);
-                    _audio.PlayPvs(component.AlertSound, uid, audioParams);
-                    component.NextAlert = _timing.CurTime + component.AlertCooldown;
-                }
+                TryPlayConfiguredAlertBeep(uid, component);
 
-                // We are doing this outside the cooldown check to avoid "alert queues"
-                // If two people die at the same time and remain dead for longer, we want to alert once for both people
-                // instead of alerting once for the first one, waiting the cooldown, and then alerting again for the second one.
+                // We do this outside the cooldown check to avoid alert queues.
+                // If two people die at once and remain dead, beep once for both instead of
+                // once now and once again after the cooldown for the second entry.
                 component.AlertedSensors.Add(sensorId);
             }
         }
@@ -121,5 +109,44 @@ public sealed class CrewMonitoringConsoleSystem : EntitySystem
         // Update all sensors info
         var allSensors = component.ConnectedSensors.Values.ToList();
         _uiSystem.SetUiState(uid, CrewMonitoringUIKey.Key, new CrewMonitoringState(allSensors));
+    }
+
+    /// <summary>
+    /// Plays the configured crew-monitor beep on every eligible console.
+    /// Shared by the DeltaV crit/dead alert path and Slasher scripted pulses.
+    /// </summary>
+    public void PlayConfiguredAlertBeep()
+    {
+        var consoles = EntityQueryEnumerator<CrewMonitoringConsoleComponent>();
+        while (consoles.MoveNext(out var uid, out var console))
+        {
+            TryPlayConfiguredAlertBeep(uid, console);
+        }
+    }
+
+    /// <summary>
+    /// Plays the configured crew-monitor beep on a single console if it is eligible.
+    /// </summary>
+    /// <param name="uid">Console entity to play the beep on.</param>
+    /// <param name="component">Console component data.</param>
+    private void TryPlayConfiguredAlertBeep(EntityUid uid, CrewMonitoringConsoleComponent component)
+    {
+        if (!component.AlertsEnabled)
+            return;
+
+        // Station power gate for placed consoles.
+        if (HasComp<TransformComponent>(uid) && !this.IsPowered(uid, EntityManager))
+            return;
+
+        // Cell power gate for handheld monitors.
+        if (!_cell.HasActivatableCharge(uid) && HasComp<PowerCellSlotComponent>(uid))
+            return;
+
+        if (_timing.CurTime < component.NextAlert)
+            return;
+
+        var audioParams = AudioParams.Default.WithVolume(-2f).WithMaxDistance(4f);
+        _audio.PlayPvs(component.AlertSound, uid, audioParams);
+        component.NextAlert = _timing.CurTime + component.AlertCooldown;
     }
 }

@@ -1,0 +1,200 @@
+- type: entity
+  name: space bee
+  id: MobBigBeeSpace
+  parent: MobSpaceBasic
+  description: Not the bees!
+  components:
+  - type: VentCrawler
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _QB/Mobs/Animals/spacebee.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: spacebee
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: spacebee_unshaded
+      shader: unshaded
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      45: Dead
+  - type: Stamina
+    baseCritThreshold: 150
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: spacebee
+        BaseUnshaded: spacebee_unshaded
+      Dead:
+        Base: dead
+        BaseUnshaded: dead_unshaded
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSpider
+      amount: 2
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Cryoxadone
+        Quantity: 250
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 120
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    angle: 0
+    animation: WeaponArcStatic
+    damage:
+      types:
+        Piercing: 6
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: SpaceApitoxin
+          Quantity: 80
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 2
+  - type: ReplacementAccent
+    accent: xeno
+  - type: InteractionPopup
+    successChance: 0.20
+    interactSuccessString: petting-success-tarantula
+    interactFailureString: petting-failure-generic
+  - type: PointLight
+    radius: 1.2
+    energy: 2
+    color: "#4faffb"
+  - type: NoSlip
+  - type: Speech
+    speechVerb: Arachnid
+    speechSounds: Arachnid
+    allowedEmotes: ['Click', 'Chitter']
+  - type: Vocal
+    sounds:
+      Male: UnisexArachnid
+      Female: UnisexArachnid
+      Unsexed: UnisexArachnid
+  - type: TypingIndicator
+    proto: spider
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+
+- type: entity
+  name: space bee
+  parent: [ SimpleSpaceMobBase, FlyingMobBase ] # Not parented off of regular bees because then they're stuck with the respirator component
+  id: MobBeeSpace
+  description: Nice to have, but you can't build a civilization on a foundation of honey alone.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: 0
+      sprite: _QB/Mobs/Animals/spacebeedrone.rsi
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Cryoxadone
+        Quantity: 0.1
+  - type: MovementAlwaysTouching
+  - type: PressureImmunity
+  - type: TemperatureDamage
+    heatDamageThreshold: 500
+    coldDamageThreshold: 0
+  - type: PointLight
+    radius: 0.1
+    energy: 1
+    color: "#4faffb"
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: CombatMode
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 7
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.1
+        density: 30
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      10: Dead
+  - type: Stamina
+    baseCritThreshold: 10
+    animationThreshold: 1
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: 0
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: Extractable
+    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: SpaceApitoxin
+        Quantity: 3
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: GroundBee
+          Quantity: 1
+  - type: Butcherable
+    spawned:
+    - id: null # Should give nothing when you butcher it so we set the item id it needs to spawn to null
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Bee
+    - Trash
+    - MultitoolDefibrillatorTarget
+  - type: MobPrice
+    price: 50
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 20
+      behaviors:
+      - !type:GibBehavior
+        recursive: false
+  - type: AlwaysRevolutionaryConvertible
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    angle: 0
+    animation: WeaponArcStatic
+    damage:
+      types:
+        Piercing: 1

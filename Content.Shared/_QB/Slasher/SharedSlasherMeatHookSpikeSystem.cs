@@ -15,11 +15,13 @@ using Content.Shared.Item;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
+using Robust.Shared.Physics.Systems;
 using Content.Shared.Throwing;
 using Content.Shared.Verbs;
 using Content.Shared.QB.Slasher.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
 
 namespace Content.Shared.QB.Slasher;
@@ -37,6 +39,7 @@ public sealed class SharedSlasherMeatHookSpikeSystem : EntitySystem
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
+    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
 
     /// <summary>
     /// Registers shared hook interaction, do-after, movement restriction, and verb handlers.
@@ -77,6 +80,7 @@ public sealed class SharedSlasherMeatHookSpikeSystem : EntitySystem
     private void OnInit(Entity<SlasherMeatHookSpikeComponent> ent, ref ComponentInit args)
     {
         ent.Comp.BodyContainer = _containerSystem.EnsureContainer<ContainerSlot>(ent, ent.Comp.ContainerId);
+        UpdateHookCollision(ent);
     }
 
     /// <summary>
@@ -102,6 +106,8 @@ public sealed class SharedSlasherMeatHookSpikeSystem : EntitySystem
     /// <param name="args">Container insertion event data.</param>
     private void OnEntInsertedIntoContainer(Entity<SlasherMeatHookSpikeComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
+        UpdateHookCollision(ent);
+
         if (_gameTiming.ApplyingState)
             return;
 
@@ -116,6 +122,8 @@ public sealed class SharedSlasherMeatHookSpikeSystem : EntitySystem
     /// <param name="args">Container removal event data.</param>
     private void OnEntRemovedFromContainer(Entity<SlasherMeatHookSpikeComponent> ent, ref EntRemovedFromContainerMessage args)
     {
+        UpdateHookCollision(ent);
+
         if (_gameTiming.ApplyingState)
             return;
 
@@ -392,6 +400,19 @@ public sealed class SharedSlasherMeatHookSpikeSystem : EntitySystem
             return false;
 
         return _containerSystem.CanRemove(victim, ent.Comp.BodyContainer);
+    }
+
+    /// <summary>
+    /// Keeps meathook collision disabled while empty and enabled while occupied.
+    /// </summary>
+    private void UpdateHookCollision(Entity<SlasherMeatHookSpikeComponent> ent)
+    {
+        var occupied = ent.Comp.BodyContainer.ContainedEntity != null;
+
+        if (!TryComp<PhysicsComponent>(ent.Owner, out var physics) || physics == null)
+            return;
+
+        _physics.SetCanCollide(ent.Owner, occupied, body: physics);
     }
 
     /// <summary>

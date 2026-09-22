@@ -1,4 +1,212 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Asterisk, Byoin and Elkridge will now show up with 8 minimum players, as opposed to 12, matching Pebble and
+          Atlas.
+    id: 171
+    time: '2026-09-22T19:19:49.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/231
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Added a recipe for roast diona nymph
+    id: 170
+    time: '2026-09-11T18:37:00.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/224
+  - author: Ecramox
+    changes:
+      - type: Tweak
+        message: Fixed the sprites in the RCD menu!
+      - type: Tweak
+        message: Fixed the sprites in the lathe menu!
+      - type: Tweak
+        message: Fixed the sprite of the atmos PDA!
+    id: 169
+    time: '2026-09-11T18:20:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/223
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Dash: Engi substation actually works now i SWEAR'
+    id: 168
+    time: '2026-09-11T18:14:01.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/225
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Dash: Fixed the messed up engi substation/smes cables'
+    id: 167
+    time: '2026-09-08T15:23:05.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/221
+  - author: MattFright
+    changes:
+      - type: Fix
+        message: 'Atlas: Station screens should properly display the timer to evac now'
+    id: 166
+    time: '2026-09-08T15:22:51.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/222
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Cloning can now be researched in T3 civilian services.
+    id: 165
+    time: '2026-09-04T00:27:23.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/207
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: 'Elkridge: Fixed Elkridge''s solars'
+    id: 164
+    time: '2026-09-03T10:54:02.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/215
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Removed fun! Microreactors and speed boots are no longer printable.
+    id: 163
+    time: '2026-09-03T02:23:18.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/205
+  - author: MattFright
+    changes:
+      - type: Add
+        message: Moths have new speech sounds now! Ported from Cosmatic Drift
+    id: 162
+    time: '2026-09-03T02:19:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/212
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Pebble: Solars are mostly restored now. This means that the roundstart situation for power should be a lot
+          less stressful now
+      - type: Tweak
+        message: 'Pebble: Various small visual tweaks'
+    id: 161
+    time: '2026-09-03T01:52:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/213
+  - author: MattFright
+    changes:
+      - type: Add
+        message: 'Dash: Added a gas analyzer to the cryogenics room'
+      - type: Add
+        message: 'Dash: Added a portable scrubber to atmos proper'
+      - type: Tweak
+        message: 'Dash: Moved the maints meatspike behind the kitchen'
+      - type: Tweak
+        message: 'Dash: Gave the librarian''s room access to maints'
+      - type: Fix
+        message: 'Dash: Fixed artifact analyzers not being connected to their pads'
+      - type: Fix
+        message: 'Dash: Fixed the salvage recycler conveyor'
+      - type: Fix
+        message: 'Dash: Fixed the issue that caused Engineering to be the first department to lose power in an outage'
+      - type: Fix
+        message: 'Dash: Hopefully fixed that one z-fighting firelock in medbay'
+    id: 160
+    time: '2026-09-03T01:52:30.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/210
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Mosquitoes now die in one hit and make you itchy. They can also be used like tiny syringes.
+    id: 159
+    time: '2026-08-29T18:00:27.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/192
+  - author: rebe83
+    changes:
+      - type: Add
+        message: A crate of 3 garden gnomes can now be ordered at cargo for 6000 spesos. Comes with a complimentary hat.
+      - type: Add
+        message: One (faux) gnome hat has appeared in the Autodrobe.
+      - type: Tweak
+        message: Nuke disks both fake and real can no longer be hidden in secret stashes
+    id: 158
+    time: '2026-08-29T17:59:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/184
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Chef cube monkeys and kobolds are no longer immune to romerol. GULP!
+    id: 157
+    time: '2026-08-21T17:42:29.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/201
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Zombies cannot recognize initial infected and will attack them. Nobody is safe!
+    id: 156
+    time: '2026-08-21T16:28:35.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/203
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: initial and regular infected take poison damage as they turn into zombies.
+    id: 155
+    time: '2026-08-21T16:26:36.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/202
+  - author: rebe83
+    changes:
+      - type: Add
+        message: Medical belts can now clip on medkits.
+      - type: Add
+        message: Security belts and webbings now have sidearm holsters. Yippee!!
+    id: 154
+    time: '2026-08-21T16:23:32.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/200
+  - author: rebe83
+    changes:
+      - type: Remove
+        message: Zombies, carp, and spiders no longer have a collective mind channel to speak in.
+    id: 153
+    time: '2026-08-21T16:22:10.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/199
+  - author: rebe83
+    changes:
+      - type: Tweak
+        message: Warden's has less junk in it. Everything fits inside now!
+    id: 152
+    time: '2026-08-21T15:43:41.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/193
+  - author: Soup4Food
+    changes:
+      - type: Fix
+        message: A bunch of little slasher things
+    id: 151
+    time: '2026-08-19T16:02:26.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/189
+  - author: Ecramox
+    changes:
+      - type: Add
+        message: Space bees can now be found in space! You can find their hive as a large wreck from the salvage magnet.
+      - type: Add
+        message: Space bees have a rare chance of spawning on the VGroid and regular debris magnet pulls. Beware.
+      - type: Tweak
+        message: >-
+          Bees now use a stinging attack animation instead of a biting animation. Their poison is now slightly different
+          but exactly the same.
+      - type: Tweak
+        message: Bees can now be zombies. Get scared get scared get scared
+    id: 150
+    time: '2026-08-19T15:57:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/188
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: The exofab circuit board is now printed by the circuit printer. Duh!
+      - type: Fix
+        message: Drones are now printed in the exofab like all other robots. Duh!
+    id: 149
+    time: '2026-08-19T15:27:05.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/194
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Evil heretic books have stopped showing up. phew!
+    id: 148
+    time: '2026-08-19T15:23:12.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/195
   - author: Sage-Jones
     changes:
       - type: Add

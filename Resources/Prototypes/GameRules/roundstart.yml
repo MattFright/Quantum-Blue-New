@@ -452,8 +452,8 @@
       - type: InitialInfected
       mindRoles:
       - MindRoleInitialInfected
-      factionsAdd: # IMP: Initial infected should be ignored by zombies.
-        - InitialInfectedIgnore
+      #factionsAdd: # IMP: Initial infected should be ignored by zombies. # QB - zombies do not ignore II
+      #  - InitialInfectedIgnore
   - type: DynamicRuleCost
     cost: 200
 
@@ -473,6 +473,9 @@
     deathMazeSampleLineLength: 66
     deathMazePortalPrototype: MidroundAntagTeleporter
     deathMazeAdditionalPortalCount: 4
+    criticalStarterKitPrototypes:
+    - SlasherPDA
+    nukeDiskDropSearchRadius: 4
     victoryLobbyMusicCollection: SlasherVictoryRoundEnd
   - type: GameRule
     minPlayers: 0

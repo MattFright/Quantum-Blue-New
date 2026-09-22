@@ -1,0 +1,5 @@
+- type: salvageMap
+  id: BeeHotel
+  mapPath: /Maps/_QB/Salvage/BeeHotel.yml
+  sizeString: salvage-map-wreck-size-large
+  

@@ -1,0 +1,7 @@
+- type: latheRecipePack
+  id: QBCircuitDynamic
+  recipes:
+  - ExosuitFabricatorMachineCircuitboard
+  - CloningPodMachineCircuitboard
+  - MedicalScannerMachineCircuitboard
+  - CloningConsoleComputerCircuitboard

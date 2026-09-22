@@ -1,4 +1,3 @@
-// ReSharper disable ArrangeTrailingCommaInMultilineLists
 namespace Content.Server.Entry
 {
     public static class IgnoredComponents
@@ -21,7 +20,8 @@ namespace Content.Server.Entry
             "HolidayRsiSwap",
             "OptionsVisualizer",
             "AnomalyScannerScreen",
-            "MultipartMachineGhost"
+            "MultipartMachineGhost",
+            "EdgeTrim" // Funky Change
         };
     }
 }

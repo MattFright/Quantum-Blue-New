@@ -57,8 +57,12 @@ public sealed class CrewMonitoringServerSystem : EntitySystem
         if (sensorStatus == null)
             return;
 
-        sensorStatus.Timestamp = _gameTiming.CurTime;
-        component.SensorStatus[args.SenderAddress] = sensorStatus;
+        // QB Comment out start
+        // sensorStatus.Timestamp = _gameTiming.CurTime;
+        // component.SensorStatus[sensorStatus.Address] = sensorStatus;
+        // QB Comment out end
+        // QB- Keep all status updates going through one path so alert behavior remains consistent.
+        SetSensorStatusByAddress(uid, args.SenderAddress, sensorStatus, component);
     }
 
     /// <summary>

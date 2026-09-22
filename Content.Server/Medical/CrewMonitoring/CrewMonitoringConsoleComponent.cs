@@ -1,10 +1,10 @@
 using Content.Shared.Medical.SuitSensor;
-using Robust.Shared.Audio; // DeltaV
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom; // DeltaV
+using Robust.Shared.Audio;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server.Medical.CrewMonitoring;
 
-[RegisterComponent, AutoGenerateComponentPause] // DeltaV - add AutoGenerateComponentPause
+[RegisterComponent, AutoGenerateComponentPause]
 [Access(typeof(CrewMonitoringConsoleSystem))]
 public sealed partial class CrewMonitoringConsoleComponent : Component
 {
@@ -19,34 +19,32 @@ public sealed partial class CrewMonitoringConsoleComponent : Component
     [DataField("sensorTimeout"), ViewVariables(VVAccess.ReadWrite)]
     public float SensorTimeout = 10f;
 
-    // DeltaV - start of alert system code
     /// <summary>
-    ///     Should the component beep if someone goes critical or dies
+    /// Whether this monitor should emit crit/dead alert beeps.
     /// </summary>
-    [DataField]
+    [DataField("alertsEnabled")]
     public bool AlertsEnabled = true;
 
     /// <summary>
-    ///     Track sensors that have triggered the crew member critical alert.
+    /// Track sensors that have already triggered a crit/dead alert on this console.
     /// </summary>
     public HashSet<string> AlertedSensors = [];
 
     /// <summary>
-    ///     Timestamp of the next possible alert (alert cooldown)
+    /// Shared alert sound used by monitor transitions and scripted pulses.
     /// </summary>
-    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
-    public TimeSpan NextAlert;
+    [DataField("alertSound")]
+    public SoundSpecifier AlertSound = new SoundPathSpecifier("/Audio/_DV/Medical/CrewMonitoring/crew_alert.ogg");
 
     /// <summary>
-    ///     Time between alerts
+    /// Minimum delay between monitor beeps for this console.
     /// </summary>
-    [DataField]
+    [DataField("alertCooldown")]
     public TimeSpan AlertCooldown = TimeSpan.FromSeconds(15);
 
     /// <summary>
-    ///     Alert sound that is played when a crew member goes into critical / dies.
+    /// Next time this console is allowed to play an alert.
     /// </summary>
-    [DataField]
-    public SoundSpecifier AlertSound = new SoundPathSpecifier("/Audio/_DV/Medical/CrewMonitoring/crew_alert.ogg");
-    // DeltaV - end of alert system code
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
+    public TimeSpan NextAlert;
 }
