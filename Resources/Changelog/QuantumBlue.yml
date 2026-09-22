@@ -1,4 +1,13 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Asterisk, Byoin and Elkridge will now show up with 8 minimum players, as opposed to 12, matching Pebble and
+          Atlas.
+    id: 171
+    time: '2026-09-22T19:19:49.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/231
   - author: rebe83
     changes:
       - type: Add
