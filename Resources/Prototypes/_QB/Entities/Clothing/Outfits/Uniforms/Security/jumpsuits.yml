@@ -2,7 +2,7 @@
 ## Cadet
 
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  parent: [ClothingUniformBase]
   id: ClothingUniformJumpsuitCadetQB
   name: cadet uniform
   description: Standard security cadet uniform.
@@ -201,7 +201,7 @@
     sprite: _QB/Clothing/Outfits/Uniforms/Security/Jumpsuits/detective_turt.rsi # QB
 
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
   id: ClothingUniformJumpsuitDetectiveProQB
   name: professional detective outfit
   description: Alternate station detective uniform.
