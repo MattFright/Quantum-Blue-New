@@ -25,6 +25,10 @@
         {
             "name": "folded-equipped-INNERCLOTHING",
             "directions": 4
+        },
+        {
+            "name": "rolled-equipped-INNERCLOTHING",
+            "directions": 4
         }
     ]
 }
