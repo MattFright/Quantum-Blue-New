@@ -2,7 +2,7 @@
 ## Cadet
 
 - type: entity
-  parent: [ClothingUniformBase]
+  parent: [ClothingUniformBase, ClothingUniformRollableBase]
   id: ClothingUniformJumpsuitCadetQB
   name: cadet uniform
   description: Standard security cadet uniform.
