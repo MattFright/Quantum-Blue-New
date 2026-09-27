@@ -1,4 +1,15 @@
 Entries:
+  - author: SeeroftheNight
+    changes:
+      - type: Fix
+        message: Documents from the document printer now correctly reference "Quantum Blue" and "Point Blue".
+      - type: Fix
+        message: Spacing and broken formatting fixed on a lot of the document templates.
+      - type: Fix
+        message: '"Nanotrasen not NanoTrasen" applied to document templates.'
+    id: 172
+    time: '2026-09-27T19:41:52.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/230
   - author: MattFright
     changes:
       - type: Tweak
