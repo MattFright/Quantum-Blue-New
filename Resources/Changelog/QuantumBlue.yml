@@ -1,4 +1,11 @@
 Entries:
+  - author: smoothfella
+    changes:
+      - type: Fix
+        message: Allulalos can customize their eye color now!
+    id: 173
+    time: '2026-09-27T19:50:43.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/233
   - author: SeeroftheNight
     changes:
       - type: Fix
