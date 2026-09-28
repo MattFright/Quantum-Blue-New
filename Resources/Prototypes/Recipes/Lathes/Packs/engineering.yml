@@ -62,7 +62,7 @@
   - WelderExperimental
   - JawsOfLife
   - ClothingMaskWeldingGas # QB
-  #- Fulton # QB 
+  #- Fulton # QB - moved to fulton pack
   #- FultonBeacon # QB
 
 - type: latheRecipePack

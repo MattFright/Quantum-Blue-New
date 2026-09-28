@@ -81,6 +81,7 @@
     dynamicPacks:
     - Equipment
     - Mining
+    - Fultons
     - SalvageSecurityWeapons # pka upgrades
   - type: EmagLatheRecipes
     emagStaticPacks:
