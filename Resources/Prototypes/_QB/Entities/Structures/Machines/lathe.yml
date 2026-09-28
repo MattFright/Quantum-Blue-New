@@ -81,6 +81,7 @@
     dynamicPacks:
     - Equipment
     - Mining
+    - SalvageSecurityWeapons # pka upgrades
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -127,6 +128,7 @@
     - Chemistry
     - PowerCells
     - ScienceWeapons
+    - Mining # PKA and drill
     - ImpProtoDynamic
   - type: EmagLatheRecipes
     emagStaticPacks:

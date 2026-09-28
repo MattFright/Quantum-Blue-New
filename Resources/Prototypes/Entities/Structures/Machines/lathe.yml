@@ -420,7 +420,7 @@
     - SecurityAmmoStaticQB #qb
     dynamicPacks:
     - SalvageSecurityBoards
-    - SalvageSecurityWeapons
+    #- SalvageSecurityWeapons # qb
     - SecurityEquipment
     - SecurityBoards
     - SecurityExplosives
