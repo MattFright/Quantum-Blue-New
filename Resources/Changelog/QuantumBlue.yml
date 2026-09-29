@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Axes now properly display the axe tool text properly.
+    id: 174
+    time: '2026-09-29T15:46:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/237
   - author: smoothfella
     changes:
       - type: Fix
