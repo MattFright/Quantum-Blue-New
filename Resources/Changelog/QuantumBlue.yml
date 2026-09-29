@@ -1,6 +1,40 @@
 Entries:
   - author: rebe83
     changes:
+      - type: Fix
+        message: Axes now properly display the axe tool text properly.
+    id: 174
+    time: '2026-09-29T15:46:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/237
+  - author: smoothfella
+    changes:
+      - type: Fix
+        message: Allulalos can customize their eye color now!
+    id: 173
+    time: '2026-09-27T19:50:43.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/233
+  - author: SeeroftheNight
+    changes:
+      - type: Fix
+        message: Documents from the document printer now correctly reference "Quantum Blue" and "Point Blue".
+      - type: Fix
+        message: Spacing and broken formatting fixed on a lot of the document templates.
+      - type: Fix
+        message: '"Nanotrasen not NanoTrasen" applied to document templates.'
+    id: 172
+    time: '2026-09-27T19:41:52.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/230
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Asterisk, Byoin and Elkridge will now show up with 8 minimum players, as opposed to 12, matching Pebble and
+          Atlas.
+    id: 171
+    time: '2026-09-22T19:19:49.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/231
+  - author: rebe83
+    changes:
       - type: Add
         message: Added a recipe for roast diona nymph
     id: 170
