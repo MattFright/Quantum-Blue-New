@@ -76,6 +76,7 @@ public sealed class StationPowerTests
         //"Skimmer",
 
         // QB PROTOTYPES:
+        "Archon",
         "AsteriskQB",
         "Atlas",
         "ByoinQB",
