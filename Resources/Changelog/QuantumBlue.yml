@@ -1,4 +1,17 @@
 Entries:
+  - author: MattFright
+    changes:
+      - type: Tweak
+        message: >-
+          Mosquitoes, bees, space bees and butterflies now move more like they're flying and less like they're on two
+          legs, hurray!
+      - type: Tweak
+        message: Mosquitoes now have an idle animation.
+      - type: Fix
+        message: Fixed bees still making a bite animation when attacking.
+    id: 184
+    time: '2026-10-23T22:22:56.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/260
   - author: rebe83
     changes:
       - type: Tweak
