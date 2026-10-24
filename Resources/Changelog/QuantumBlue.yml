@@ -1,6 +1,15 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Add
+        message: >-
+          Quantum Blue is now hiring personnel for the Derelict "Archon" Grid station! A new micropop station for 1-15
+          pop, featuring labyrinthean maints and the filthiest hallways you've seen.
+    id: 186
+    time: '2026-10-24T07:20:41.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/258
+  - author: MattFright
+    changes:
       - type: Fix
         message: Fire alarms are actually gone now.
     id: 185
