@@ -2,8 +2,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorWhite
-  name: white turtleneck with skirt
-  description: A generic white turtleneck with no rank markings.
+  name: white turtleneck skirt
+  description: A generic white turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -29,7 +29,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorGrey
-  name: grey turtleneck with skirt
+  name: grey turtleneck skirt
   description: A tasteful grey turtleneck that reminds you of the good old days.
   components:
   - type: Sprite
@@ -60,8 +60,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorBlack
-  name: black turtleneck with skirt
-  description: A generic black turtleneck with no rank markings.
+  name: black turtleneck skirt
+  description: A generic black turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -91,8 +91,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorBlue
-  name: blue turtleneck with skirt
-  description: A generic blue turtleneck with no rank markings.
+  name: blue turtleneck skirt
+  description: A generic blue turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -122,8 +122,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorDarkBlue
-  name: dark blue turtleneck with skirt
-  description: A generic dark blue turtleneck with no rank markings.
+  name: dark blue turtleneck skirt
+  description: A generic dark blue turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -153,8 +153,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorTeal
-  name: teal turtleneck with skirt
-  description: A generic teal turtleneck with no rank markings.
+  name: teal turtleneck skirt
+  description: A generic teal turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -184,8 +184,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorGreen
-  name: green turtleneck with skirt
-  description: A generic green turtleneck with no rank markings.
+  name: green turtleneck skirt
+  description: A generic green turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -215,8 +215,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorDarkGreen
-  name: dark green turtleneck with skirt
-  description: A generic dark green turtleneck with no rank markings.
+  name: dark green turtleneck skirt
+  description: A generic dark green turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -246,8 +246,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorOrange
-  name: orange turtleneck with skirt
-  description: A generic orange turtleneck with no rank markings.
+  name: orange turtleneck skirt
+  description: A generic orange turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -277,8 +277,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorPink
-  name: pink turtleneck with skirt
-  description: A generic pink turtleneck with no rank markings.
+  name: pink turtleneck skirt
+  description: A generic pink turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -308,8 +308,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorRed
-  name: red turtleneck with skirt
-  description: A generic red turtleneck with no rank markings.
+  name: red turtleneck skirt
+  description: A generic red turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -339,8 +339,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorYellow
-  name: yellow turtleneck with skirt
-  description: A generic yellow turtleneck with no rank markings.
+  name: yellow turtleneck skirt
+  description: A generic yellow turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -370,8 +370,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorPurple
-  name: purple turtleneck with skirt
-  description: A generic light purple turtleneck with no rank markings.
+  name: purple turtleneck skirt
+  description: A generic light purple turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -401,8 +401,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorLightBrown
-  name: light brown turtleneck with skirt
-  description: A generic light brown turtleneck with no rank markings.
+  name: light brown turtleneck skirt
+  description: A generic light brown turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -432,8 +432,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorBrown
-  name: brown turtleneck with skirt
-  description: A generic brown turtleneck with no rank markings.
+  name: brown turtleneck skirt
+  description: A generic brown turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
@@ -463,8 +463,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformTurtleneckSkirtColorMaroon
-  name: maroon turtleneck with skirt
-  description: A generic maroon turtleneck with no rank markings.
+  name: maroon turtleneck skirt
+  description: A generic maroon turtleneck no rank markings.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color_turtle.rsi
