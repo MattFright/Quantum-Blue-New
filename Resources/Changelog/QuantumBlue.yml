@@ -1,6 +1,13 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Fix
+        message: Borgs can now wear any neck slot items, hurray!
+    id: 187
+    time: '2026-10-24T15:09:58.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/262
+  - author: MattFright
+    changes:
       - type: Add
         message: >-
           Quantum Blue is now hiring personnel for the Derelict "Archon" Grid station! A new micropop station for 1-15
