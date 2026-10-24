@@ -2,6 +2,13 @@ Entries:
   - author: MattFright
     changes:
       - type: Fix
+        message: Deathmatch is back!
+    id: 188
+    time: '2026-10-24T17:43:46.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/265
+  - author: MattFright
+    changes:
+      - type: Fix
         message: Borgs can now wear any neck slot items, hurray!
     id: 187
     time: '2026-10-24T15:09:58.0000000+00:00'
