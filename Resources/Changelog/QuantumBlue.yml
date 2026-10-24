@@ -1,6 +1,13 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Fix
+        message: Fire alarms are actually gone now.
+    id: 185
+    time: '2026-10-24T07:19:42.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/261
+  - author: MattFright
+    changes:
       - type: Tweak
         message: >-
           Mosquitoes, bees, space bees and butterflies now move more like they're flying and less like they're on two
