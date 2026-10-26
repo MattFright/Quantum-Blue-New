@@ -1,6 +1,23 @@
 Entries:
   - author: MattFright
     changes:
+      - type: Add
+        message: 'Archon: Added a space heater to cargo.'
+      - type: Add
+        message: 'Archon: Added two freezer boards to atmos.'
+      - type: Tweak
+        message: 'Archon: Connected the maints area from evac and around command to actually have a public exit at the end.'
+      - type: Fix
+        message: 'Archon: Fixed the captain''s airlock not being locked.'
+      - type: Fix
+        message: 'Archon: Added materials next to the cargo techfab that i just forgot to before.'
+      - type: Fix
+        message: 'Archon: Artifact analyzers are now linked.'
+    id: 190
+    time: '2026-10-26T06:45:44.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/267
+  - author: MattFright
+    changes:
       - type: Tweak
         message: 'Archon: Moved the jukebox to the center of the lounge for maximum enjoyment'
       - type: Fix
