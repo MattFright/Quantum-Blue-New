@@ -1,4 +1,11 @@
 Entries:
+  - author: rebe83
+    changes:
+      - type: Fix
+        message: Added firelock access to engineering IDs. Whoopsie!
+    id: 193
+    time: '2026-10-28T18:22:24.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/269
   - author: staryoshi06
     changes:
       - type: Tweak
