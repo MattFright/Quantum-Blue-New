@@ -1,4 +1,11 @@
 Entries:
+  - author: staryoshi06
+    changes:
+      - type: Tweak
+        message: Vulpkanin can now have more colourful fur.
+    id: 192
+    time: '2026-10-28T18:13:20.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/268
   - author: SeeroftheNight
     changes:
       - type: Add
