@@ -1,4 +1,13 @@
 Entries:
+  - author: SeeroftheNight
+    changes:
+      - type: Add
+        message: >-
+          Added butter steak, raw butter steak, butter on a stick, butterdog, butter buscuit, butter tea, and
+          butterbrew.
+    id: 191
+    time: '2026-10-28T18:04:32.0000000+00:00'
+    url: https://github.com/QuantumBlueSS14/Quantum-Blue-New/pull/270
   - author: MattFright
     changes:
       - type: Add
