@@ -89,17 +89,6 @@
             ]
         },
         {
-            "name": "plushie_gnome"
-        },
-        {
-            "name": "plushie_gnome-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "plushie_gnome-inhand-right",
-            "directions": 4
-        },
-        {
             "name": "plushie_goblin"
         },
         {
