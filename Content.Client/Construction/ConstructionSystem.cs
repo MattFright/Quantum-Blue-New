@@ -293,13 +293,14 @@ namespace Content.Client.Construction
             var sprite = Comp<SpriteComponent>(ghost.Value);
             _sprite.SetColor((ghost.Value, sprite), new Color(48, 255, 48, 128));
 
-            if (targetProto.TryGetComponent(out IconComponent? icon, EntityManager.ComponentFactory))
+            if (targetProto.TryGetComponent(out IconComponent? iconComp, EntityManager.ComponentFactory)) // QB Rewrite
             {
-                _sprite.AddBlankLayer((ghost.Value, sprite), 0);
-                _sprite.LayerSetSprite((ghost.Value, sprite), 0, icon.Icon);
-                sprite.LayerSetShader(0, "unshaded");
-                _sprite.LayerSetVisible((ghost.Value, sprite), 0, true);
-            }
+                _sprite.AddBlankLayer((ghost.Value, sprite));
+                var idx = sprite.AllLayers.Count() - 1;
+                _sprite.LayerSetSprite((ghost.Value, sprite), idx, iconComp.Icon);
+                sprite.LayerSetShader(idx, "unshaded");
+                _sprite.LayerSetVisible((ghost.Value, sprite), idx, true);
+            } // QB rewrite end
             else if (targetProto.Components.TryGetValue("Sprite", out _))
             {
                 var dummy = EntityManager.SpawnEntity(targetProtoId, MapCoordinates.Nullspace);
@@ -316,13 +317,12 @@ namespace Content.Client.Construction
                         state.StateId.Name is null)
                         continue;
 
-                    _sprite.AddBlankLayer((ghost.Value, sprite), i);
-                    _sprite.LayerSetSprite((ghost.Value, sprite), i, new SpriteSpecifier.Rsi(rsi.Path, state.StateId.Name));
-                    sprite.LayerSetShader(i, "unshaded");
-                    _sprite.LayerSetVisible((ghost.Value, sprite), i, true);
+                    _sprite.AddBlankLayer((ghost.Value, sprite)); // QB rewrite
+                    var ghostLayer = sprite.AllLayers.Count() - 1;
+                    _sprite.LayerSetRsi((ghost.Value, sprite), ghostLayer, rsi.Path, state.StateId.Name);
+                    sprite.LayerSetShader(ghostLayer, "unshaded");
+                    _sprite.LayerSetVisible((ghost.Value, sprite), ghostLayer, true); // QB rewrite end
                 }
-
-                Del(dummy);
             }
             else
                 return false;
