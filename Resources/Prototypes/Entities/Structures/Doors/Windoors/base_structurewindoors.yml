@@ -95,13 +95,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 100 # QB - massive health nerf
       behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 25 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -225,13 +225,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 100 # QB - massive health nerf
       behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 37 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -298,13 +298,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 480
+        damage: 100 # QB - massive health nerf
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 37 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -368,13 +368,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 800
+        damage: 150 # QB - massive health nerf
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 530
+        damage: 75 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -443,13 +443,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 100 # QB - massive health nerf
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 50 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -513,13 +513,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200
+        damage: 225 # QB - massive health nerf
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 113 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

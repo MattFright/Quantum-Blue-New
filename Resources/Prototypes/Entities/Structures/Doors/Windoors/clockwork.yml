@@ -37,13 +37,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 100 # QB - massive health nerf
       behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 37 # QB - massive health nerf
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
