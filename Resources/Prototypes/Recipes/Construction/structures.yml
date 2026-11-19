@@ -1035,7 +1035,7 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: Windoor
+  id: QBWindoor # QB
   graph: Windoor
   startNode: start
   targetNode: windoor
@@ -1048,7 +1048,7 @@
 
 - type: construction
   id: SecureWindoor
-  graph: Windoor
+  graph: QBWindoorSecure # QB
   startNode: start
   targetNode: windoorSecure
   category: construction-category-structures
@@ -1059,7 +1059,7 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: ClockworkWindoor
+  id: QBWindoorClockwork # QB
   graph: Windoor
   startNode: start
   targetNode: windoorClockwork
